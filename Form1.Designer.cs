@@ -58,6 +58,8 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCom = new System.Windows.Forms.Button();
+            this.comboxCom = new System.Windows.Forms.ComboBox();
             this.panel_log.SuspendLayout();
             this.panel_setting.SuspendLayout();
             this.panel_file.SuspendLayout();
@@ -77,6 +79,7 @@
             this.btn_instrument.Size = new System.Drawing.Size(118, 36);
             this.btn_instrument.TabIndex = 0;
             this.btn_instrument.UseVisualStyleBackColor = true;
+            this.btn_instrument.Click += new System.EventHandler(this.btn_instrument_Click);
             // 
             // btn_record
             // 
@@ -115,7 +118,7 @@
             // 
             this.panel_log.BackgroundImage = global::ProfileDetection.Properties.Resources.中部背景;
             this.panel_log.Controls.Add(this.label1);
-            this.panel_log.Location = new System.Drawing.Point(-1, 68);
+            this.panel_log.Location = new System.Drawing.Point(-1, 67);
             this.panel_log.Margin = new System.Windows.Forms.Padding(0);
             this.panel_log.Name = "panel_log";
             this.panel_log.Size = new System.Drawing.Size(920, 507);
@@ -141,7 +144,7 @@
             this.panel_setting.Controls.Add(this.button2);
             this.panel_setting.Controls.Add(this.button1);
             this.panel_setting.Controls.Add(this.panel_setting_contaner);
-            this.panel_setting.Location = new System.Drawing.Point(-1, 68);
+            this.panel_setting.Location = new System.Drawing.Point(-1, 67);
             this.panel_setting.Name = "panel_setting";
             this.panel_setting.Size = new System.Drawing.Size(920, 507);
             this.panel_setting.TabIndex = 1;
@@ -214,7 +217,7 @@
             // 
             this.panel_file.BackgroundImage = global::ProfileDetection.Properties.Resources.中部背景;
             this.panel_file.Controls.Add(this.panel_file_contaner);
-            this.panel_file.Location = new System.Drawing.Point(-1, 68);
+            this.panel_file.Location = new System.Drawing.Point(-1, 67);
             this.panel_file.Name = "panel_file";
             this.panel_file.Size = new System.Drawing.Size(920, 507);
             this.panel_file.TabIndex = 6;
@@ -342,6 +345,28 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 80;
             // 
+            // btnCom
+            // 
+            this.btnCom.BackColor = System.Drawing.Color.White;
+            this.btnCom.BackgroundImage = global::ProfileDetection.Properties.Resources.com_normal;
+            this.btnCom.FlatAppearance.BorderSize = 0;
+            this.btnCom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCom.Location = new System.Drawing.Point(751, 84);
+            this.btnCom.Name = "btnCom";
+            this.btnCom.Size = new System.Drawing.Size(75, 75);
+            this.btnCom.TabIndex = 10;
+            this.btnCom.UseVisualStyleBackColor = false;
+            this.btnCom.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnCom_MouseDown);
+            this.btnCom.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnCom_MouseUp);
+            // 
+            // comboxCom
+            // 
+            this.comboxCom.FormattingEnabled = true;
+            this.comboxCom.Location = new System.Drawing.Point(832, 112);
+            this.comboxCom.Name = "comboxCom";
+            this.comboxCom.Size = new System.Drawing.Size(60, 20);
+            this.comboxCom.TabIndex = 11;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -358,6 +383,8 @@
             this.Controls.Add(this.dataGridViewItems);
             this.Controls.Add(this.dataGridViewSingle);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.comboxCom);
+            this.Controls.Add(this.btnCom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Text = "Form1";
@@ -406,6 +433,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.Button btnCom;
+        private System.Windows.Forms.ComboBox comboxCom;
     }
 }
 

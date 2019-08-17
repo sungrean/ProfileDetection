@@ -13,6 +13,7 @@ namespace ProfileDetection
     {
         public Button[] btn_mains=new Button[4] ;
         private Point mPoint;
+        Image tmpImgCom= ProfileDetection.Properties.Resources.com_normal;
         public MainForm()
         {
             InitializeComponent();
@@ -86,6 +87,22 @@ namespace ProfileDetection
             {
                 this.Location = new Point(this.Location.X + e.X - mPoint.X, this.Location.Y + e.Y - mPoint.Y);
             }
+        }
+
+        private void btnCom_MouseDown(object sender, MouseEventArgs e)
+        {
+            tmpImgCom = this.btnCom.BackgroundImage;
+            this.btnCom.BackgroundImage= ProfileDetection.Properties.Resources.com_press;
+        }
+
+        private void btn_instrument_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCom_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btnCom.BackgroundImage = tmpImgCom;
         }
     }
 }

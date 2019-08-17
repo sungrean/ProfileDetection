@@ -52,6 +52,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Protocol.cs" />
+    <Compile Include="REC.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +180,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\廓形背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\com_activi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\com_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\com_press.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
