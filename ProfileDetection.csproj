@@ -81,9 +81,6 @@
     <None Include="Resources\btn背景激活.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\大背景.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\大背景2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +109,75 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\中部背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_bg_setings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_bg_setings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20170826162830586.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20170826162908183.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20170826162919520.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20170826162939481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\硬件.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\硬件激活.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\通用激活.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\输出激活.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\输出未激活.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\输入激活.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\输入未激活.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\通用激活1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\通用未激活.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\线型参数激活.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\线型参数未激活.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\线型参数未激活1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\廓形背景.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

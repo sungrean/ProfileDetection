@@ -118,43 +118,109 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn背景" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn背景.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="输入激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\输入激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn背景激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn背景激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="大背景" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\大背景.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="20170826162939481" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20170826162939481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="大背景2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\大背景2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="20170826162919520" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20170826162919520.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="记录" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\记录.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="记录激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\记录激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="20170826162908183" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20170826162908183.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="设备" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\设备.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="设备激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\设备激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="20170826162830586" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20170826162830586.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="设置" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\设置.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="设置激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\设置激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="大背景2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\大背景2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="文件" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\文件.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="文件激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\文件激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="线型参数未激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\线型参数未激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="记录" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\记录.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="输出未激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\输出未激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="记录激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\记录激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="通用激活1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\通用激活1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="通用未激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\通用未激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="设置" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\设置.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn背景激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn背景激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="通用激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\通用激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn背景" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn背景.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="硬件" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\硬件.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="硬件激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\硬件激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panel_bg_setings1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel_bg_setings1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="线型参数未激活1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\线型参数未激活1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="输入未激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\输入未激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="设备激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\设备激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="线型参数激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\线型参数激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panel_bg_setings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel_bg_setings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="设置激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\设置激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="输出激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\输出激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="中部背景" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\中部背景.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="文件激活" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\文件激活.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="廓形背景" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\廓形背景.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
