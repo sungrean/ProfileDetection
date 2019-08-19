@@ -37,6 +37,17 @@ public struct COMM_FRAME_T{
 	public char frameTail;
 };
 
+enum CH_MODE
+{
+    STOP = 0,
+    WORK = 1,
+    LEARN = 2,
+    CH_OFF = 3,
+    PASS = 4,
+    SETUP = 5,
+    ERR = 8
+};
+
 namespace ProfileDetection
 {
     public class Protocol
@@ -474,5 +485,6 @@ namespace ProfileDetection
 
             return cache.ToString();
         }
+         
     }
 }

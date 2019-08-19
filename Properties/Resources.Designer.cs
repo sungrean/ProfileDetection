@@ -233,6 +233,26 @@ namespace ProfileDetection.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 实时校准未激活 {
+            get {
+                object obj = ResourceManager.GetObject("实时校准未激活", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 实时校准激活 {
+            get {
+                object obj = ResourceManager.GetObject("实时校准激活", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 廓形背景 {
             get {
                 object obj = ResourceManager.GetObject("廓形背景", resourceCulture);

@@ -190,5 +190,11 @@
   <ItemGroup>
     <None Include="Resources\com_press.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\实时校准激活.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\实时校准未激活.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
