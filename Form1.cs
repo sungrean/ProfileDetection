@@ -21,7 +21,8 @@ namespace ProfileDetection
         const Int32 INPUT_NUM = 4;
         bool isSetupModel = false;
 
-        public Button[] btn_mains=new Button[4] ;
+        public Button[] btn_mains=new Button[4];
+        public Button[] btn_settings = new Button[5];
         private Point mPoint;
         Image tmpImgCom= ProfileDetection.Properties.Resources.com_normal;
         public Protocol devProtocol = new Protocol();
@@ -48,22 +49,26 @@ namespace ProfileDetection
 
         private void btn_main_click(object sender,EventArgs e)
         {
+            //将四个设置按钮设置为未激活
             this.btn_instrument.BackgroundImage = ProfileDetection.Properties.Resources.设备;//this.btn_record,this.btn_setting, this.btn_setting_file
             this.btn_record.BackgroundImage = ProfileDetection.Properties.Resources.记录;
             this.btn_setting.BackgroundImage = ProfileDetection.Properties.Resources.设置;
             this.btn_setting_file.BackgroundImage = ProfileDetection.Properties.Resources.文件;
 
+
+            //隐藏三个面板
             this.panel_file.Visible = false;
             this.panel_log.Visible = false;
             this.panel_setting.Visible = false;
 
+            #region 激活对应的面板和按钮
             int btn_index = 0;
-            for(; btn_index < btn_mains.Length; btn_index++)
+            for (; btn_index < btn_mains.Length; btn_index++)
             {
-                if (sender == btn_mains[btn_index])
+                if (sender == btn_mains[btn_index])      //获取到当前点击按钮的索引，配合switch使用
                     break;
             }
-            switch(btn_index)                   //将相应的按钮设置为激活状态，并显示对应的panel；
+            switch (btn_index)                              //将相应的按钮设置为激活状态，并显示对应的panel；
             {
                 case (int)btn_index_main.btn_instrument:
                     this.btn_instrument.BackgroundImage = ProfileDetection.Properties.Resources.设备激活;
@@ -81,11 +86,61 @@ namespace ProfileDetection
                     this.panel_file.Visible = true;
                     break;
             }
+            #endregion
         }
-        
+
+        private void btn_settings_click(object sender, EventArgs e)
+        {
+            //将四个设置按钮设置为未激活
+            this.btn_setting_general.BackgroundImage = ProfileDetection.Properties.Resources.通用未激活; 
+            this.btn_setting_output.BackgroundImage = ProfileDetection.Properties.Resources.输出未激活;
+            this.btn_setting_input.BackgroundImage = ProfileDetection.Properties.Resources.输入未激活;
+            this.btn_setting_wire1.BackgroundImage = ProfileDetection.Properties.Resources.线型参数未激活1;
+            this.btn_setting_wire2.BackgroundImage = ProfileDetection.Properties.Resources.线型参数未激活1;
+
+
+            //隐藏五个面板
+            this.panel_setting_contaner.Visible = false;
+            this.panel_setting_output.Visible = false;
+            this.panel_setting_input.Visible = false;
+            this.panel_setting_wire1.Visible = false;
+            this.panel_setting_wire2.Visible = false;
+
+            #region 激活对应的面板和按钮
+            int btn_index = 0;
+            for (; btn_index < btn_settings.Length; btn_index++)
+            {
+                if (sender == btn_settings[btn_index])      //获取到当前点击按钮的索引，配合switch使用
+                    break;
+            }
+            switch (btn_index)                              //将相应的按钮设置为激活状态，并显示对应的panel；
+            {
+                case (int)btn_index_setting.btn_general:
+                    this.btn_setting_general.BackgroundImage = ProfileDetection.Properties.Resources.通用激活;
+                    this.panel_setting_contaner.Visible = true;
+                    break;
+                case (int)btn_index_setting.btn_output:
+                    this.btn_setting_output.BackgroundImage = ProfileDetection.Properties.Resources.输出激活;
+                    this.panel_setting_output.Visible = true;
+                    break;
+                case (int) btn_index_setting.btn_input:
+                    this.btn_setting_input.BackgroundImage = ProfileDetection.Properties.Resources.输入激活;
+                    this.panel_setting_input.Visible = true;
+                    break;
+                case (int)btn_index_setting.btn_wire1:
+                    this.btn_setting_wire1.BackgroundImage = ProfileDetection.Properties.Resources.线型参数激活;
+                    this.panel_setting_wire1.Visible = true;
+                    break;
+                case (int)btn_index_setting.btn_wire2:
+                    this.btn_setting_wire2.BackgroundImage = ProfileDetection.Properties.Resources.线型参数激活;
+                    this.panel_setting_wire2.Visible = true;
+                    break;
+            }
+            #endregion
+        }
         private void MainForm_Load(object sender, EventArgs e)
         {
-            #region 绑定按钮并添加统一监听事件：实现面板切换功能。
+            #region 绑定主界面按钮并添加统一监听事件：实现主面板切换功能。
             btn_mains[0] = this.btn_instrument;
             btn_mains[1] = this.btn_record;
             btn_mains[2] = this.btn_setting;
@@ -94,15 +149,22 @@ namespace ProfileDetection
             {
                 btn_mains[i].Click += new System.EventHandler(this.btn_main_click);
             }
-            #endregion
+            #endregion 
 
-            #region 获取“”界面的所有控件并进行点击操作的绑定
-            for(int i=0;i< panel1.Controls.Count;i++)
+            # region 绑定设置按钮并添加统一监听事件：实现设置面板切换功能。
+            btn_settings[0] = this.btn_setting_general;
+            btn_settings[1] = this.btn_setting_output;
+            btn_settings[2] = this.btn_setting_input;
+            btn_settings[3] = this.btn_setting_wire1;
+            btn_settings[4] = this.btn_setting_wire2;
+            for(int i=0;i<btn_settings.Length;i++)
             {
-
+                btn_settings[i].Click += new System.EventHandler(this.btn_settings_click);
             }
-
             #endregion
+            btn_settings[0].PerformClick();
+            btn_mains[0].PerformClick();
+
             #region 绑定串口选项到串口下拉框
             string[] ports = SerialPort.GetPortNames();
             comboxCom.Items.AddRange(ports);
@@ -116,12 +178,26 @@ namespace ProfileDetection
 
             //this.group_output2.Enabled = false;
         }
+        /// <summary>
+        /// 主界面按钮枚举
+        /// </summary>
         enum btn_index_main
-        { 
-             btn_instrument =0,
-             btn_record=1,
-             btn_setting=2,
-             btn_setting_file=3
+        {
+            btn_instrument = 0,
+            btn_record = 1,
+            btn_setting = 2,
+            btn_setting_file = 3
+        }
+        /// <summary>
+        /// 设置界面按钮枚举
+        /// </summary>
+        enum btn_index_setting
+        {
+            btn_general = 0,
+            btn_output = 1,
+            btn_input = 2,
+            btn_wire1 = 3,
+            btn_wire2 = 4
         }
 
         //下面的mouseDown配合MouseMove实现窗口拖动
@@ -138,7 +214,7 @@ namespace ProfileDetection
             }
         }
 
-        private void btnCom_MouseDown(object sender, MouseEventArgs e)
+        private void btnCom_MouseDown(object sender, MouseEventArgs e)     
         {
             tmpImgCom = this.btnCom.BackgroundImage;
             this.btnCom.BackgroundImage= ProfileDetection.Properties.Resources.com_press;
@@ -161,9 +237,11 @@ namespace ProfileDetection
             {
                 this.btnCom.BackgroundImage= ProfileDetection.Properties.Resources.com_activi;
             }
-            else
+            else    //如果串口关闭，把串口开关设置为未激活状态。关闭设置模式
             {
                 this.btnCom.BackgroundImage = ProfileDetection.Properties.Resources.com_normal;
+                isSetupModel = false;
+                btn_Sen.BackgroundImage = ProfileDetection.Properties.Resources.实时校准未激活;
             }
 
             long ms = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000;     //时间戳;
