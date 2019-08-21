@@ -36,7 +36,7 @@ namespace ProfileDetection
         const int imgScaleX = 4;
         const int imgScaleY = 1;
         const int imgWidth = imgScaleX * REC.PIX_NUM;
-        const int imgHeight = imgWidth;
+        const int imgHeight = imgWidth; 
 
         Bitmap bmp = new Bitmap(imgWidth, imgHeight);
 
@@ -162,8 +162,8 @@ namespace ProfileDetection
                 btn_settings[i].Click += new System.EventHandler(this.btn_settings_click);
             }
             #endregion
-            btn_settings[0].PerformClick();
-            btn_mains[0].PerformClick();
+            btn_settings[0].PerformClick();     //触发通用设置点击事件
+            btn_mains[0].PerformClick();        //触发设备按钮点击事件
 
             #region 绑定串口选项到串口下拉框
             string[] ports = SerialPort.GetPortNames();
@@ -174,6 +174,50 @@ namespace ProfileDetection
             #region 开启计时器timer1
             timer1.Interval = 200;
             timer1.Enabled = true;
+            #endregion
+
+            #region 在界面上显示写数据，看看效果。 
+            REC_ITEM rec = new REC_ITEM();
+            this.dataGridViewSingle.Rows.Add(rec.modelIdx,
+                string.Format("{0:X}", rec.analEN), 
+                string.Format("{0:X}", rec.result),
+                rec.refWidth,rec.yScale,(rec.isSeal==0?"无":"有"));  
+
+            this.dataGridViewItems.Rows.Add("线端位置",
+             Convert.ToSingle(rec.corePosMax * REC.PIX_SIZE).ToString("0.000"),
+             Convert.ToSingle(rec.corePosMin * REC.PIX_SIZE).ToString("0.000"),
+             Convert.ToSingle(rec.corePosStd * REC.PIX_SIZE).ToString("0.000"),
+             Convert.ToSingle(rec.corePos * REC.PIX_SIZE).ToString("0.000"));
+            this.dataGridViewItems.Rows.Add("线径",
+                Convert.ToSingle(rec.coreWidthMax).ToString("0.000"),
+                Convert.ToSingle(rec.coreWidthMin).ToString("0.000"),
+                Convert.ToSingle(rec.coreWidthStd).ToString("0.000"),
+                Convert.ToSingle(rec.coreWidth).ToString("0.000"));
+            this.dataGridViewItems.Rows.Add("防水栓位置",
+                Convert.ToSingle(rec.sealPosMax * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.sealPosMin * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.sealPosStd * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.sealPos * REC.PIX_SIZE).ToString("0.000"));
+            this.dataGridViewItems.Rows.Add("防水栓直径",
+                Convert.ToSingle(rec.sealWidthMax).ToString("0.000"),
+                Convert.ToSingle(rec.sealWidthMin).ToString("0.000"),
+                Convert.ToSingle(rec.sealWidthStd).ToString("0.000"),
+                Convert.ToSingle(rec.sealWidth).ToString("0.000"));
+            this.dataGridViewItems.Rows.Add("剥切位置",
+                Convert.ToSingle(rec.stripPosMax * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.stripPosMin * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.stripPosStd * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.stripPos * REC.PIX_SIZE).ToString("0.000"));
+            this.dataGridViewItems.Rows.Add("剥切长度",
+                Convert.ToSingle(rec.stripLenMax * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.stripLenMin * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.stripLenStd * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.stripLen * REC.PIX_SIZE).ToString("0.000"));
+            this.dataGridViewItems.Rows.Add("分叉宽度",
+                Convert.ToSingle(rec.splayMax).ToString("0.000"),
+                Convert.ToSingle(rec.splayMin).ToString("0.000"),
+                Convert.ToSingle(rec.splayStd).ToString("0.000"),
+                Convert.ToSingle(rec.splay).ToString("0.000"));
             #endregion
 
             //this.group_output2.Enabled = false;
@@ -427,8 +471,50 @@ namespace ProfileDetection
         //Show Record
         void ShowRec(REC_ITEM rec)
         {
-            DrawRecImg(rec);    //显示记录录的图片
+            DrawRecImg(rec);    //显示记录的图片
 
+            #region 显示数据
+            this.dataGridViewSingle.Rows.Add(rec.modelIdx,
+                string.Format("{0:X}", rec.analEN),
+                string.Format("{0:X}", rec.result),
+                rec.refWidth, rec.yScale, (rec.isSeal == 0 ? "无" : "有"));
+
+            this.dataGridViewItems.Rows.Add("线端位置",
+             Convert.ToSingle(rec.corePosMax * REC.PIX_SIZE).ToString("0.000"),
+             Convert.ToSingle(rec.corePosMin * REC.PIX_SIZE).ToString("0.000"),
+             Convert.ToSingle(rec.corePosStd * REC.PIX_SIZE).ToString("0.000"),
+             Convert.ToSingle(rec.corePos * REC.PIX_SIZE).ToString("0.000"));
+            this.dataGridViewItems.Rows.Add("线径",
+                Convert.ToSingle(rec.coreWidthMax).ToString("0.000"),
+                Convert.ToSingle(rec.coreWidthMin).ToString("0.000"),
+                Convert.ToSingle(rec.coreWidthStd).ToString("0.000"),
+                Convert.ToSingle(rec.coreWidth).ToString("0.000"));
+            this.dataGridViewItems.Rows.Add("防水栓位置",
+                Convert.ToSingle(rec.sealPosMax * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.sealPosMin * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.sealPosStd * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.sealPos * REC.PIX_SIZE).ToString("0.000"));
+            this.dataGridViewItems.Rows.Add("防水栓直径",
+                Convert.ToSingle(rec.sealWidthMax).ToString("0.000"),
+                Convert.ToSingle(rec.sealWidthMin).ToString("0.000"),
+                Convert.ToSingle(rec.sealWidthStd).ToString("0.000"),
+                Convert.ToSingle(rec.sealWidth).ToString("0.000"));
+            this.dataGridViewItems.Rows.Add("剥切位置",
+                Convert.ToSingle(rec.stripPosMax * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.stripPosMin * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.stripPosStd * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.stripPos * REC.PIX_SIZE).ToString("0.000"));
+            this.dataGridViewItems.Rows.Add("剥切长度",
+                Convert.ToSingle(rec.stripLenMax * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.stripLenMin * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.stripLenStd * REC.PIX_SIZE).ToString("0.000"),
+                Convert.ToSingle(rec.stripLen * REC.PIX_SIZE).ToString("0.000"));
+            this.dataGridViewItems.Rows.Add("分叉宽度",
+                Convert.ToSingle(rec.splayMax).ToString("0.000"),
+                Convert.ToSingle(rec.splayMin).ToString("0.000"),
+                Convert.ToSingle(rec.splayStd).ToString("0.000"),
+                Convert.ToSingle(rec.splay).ToString("0.000"));
+            #endregion
         }
 
         //将记录结构体中的图片绘制到窗口

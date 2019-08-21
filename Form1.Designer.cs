@@ -40,6 +40,8 @@ namespace ProfileDetection
             this.panel_log = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_setting = new System.Windows.Forms.Panel();
+            this.btUpdateCfg = new System.Windows.Forms.Button();
+            this.btUploadCfg = new System.Windows.Forms.Button();
             this.panel_setting_wire1 = new System.Windows.Forms.Panel();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -136,6 +138,7 @@ namespace ProfileDetection
             this.label21 = new System.Windows.Forms.Label();
             this.cBoxInputModeLvl1 = new System.Windows.Forms.ComboBox();
             this.panel_setting_output = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
             this.checkBoxOutIgnoreWhileOutActive = new System.Windows.Forms.CheckBox();
             this.group_output2 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -203,17 +206,15 @@ namespace ProfileDetection
             this.Max = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewSingle = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isSeal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCom = new System.Windows.Forms.Button();
             this.comboxCom = new System.Windows.Forms.ComboBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.label38 = new System.Windows.Forms.Label();
-            this.btUpdateCfg = new System.Windows.Forms.Button();
-            this.btUploadCfg = new System.Windows.Forms.Button();
             this.panel_log.SuspendLayout();
             this.panel_setting.SuspendLayout();
             this.panel_setting_wire1.SuspendLayout();
@@ -298,7 +299,7 @@ namespace ProfileDetection
             // 
             this.panel_log.BackgroundImage = global::ProfileDetection.Properties.Resources.中部背景;
             this.panel_log.Controls.Add(this.label1);
-            this.panel_log.Location = new System.Drawing.Point(0, 66);
+            this.panel_log.Location = new System.Drawing.Point(-1, 66);
             this.panel_log.Margin = new System.Windows.Forms.Padding(0);
             this.panel_log.Name = "panel_log";
             this.panel_log.Size = new System.Drawing.Size(920, 507);
@@ -330,10 +331,32 @@ namespace ProfileDetection
             this.panel_setting.Controls.Add(this.btn_setting_input);
             this.panel_setting.Controls.Add(this.btn_setting_general);
             this.panel_setting.Controls.Add(this.panel_setting_contaner);
-            this.panel_setting.Location = new System.Drawing.Point(0, 66);
+            this.panel_setting.Location = new System.Drawing.Point(-1, 66);
             this.panel_setting.Name = "panel_setting";
             this.panel_setting.Size = new System.Drawing.Size(920, 507);
             this.panel_setting.TabIndex = 1;
+            // 
+            // btUpdateCfg
+            // 
+            this.btUpdateCfg.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btUpdateCfg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(60)))), ((int)(((byte)(103)))));
+            this.btUpdateCfg.Location = new System.Drawing.Point(191, 112);
+            this.btUpdateCfg.Name = "btUpdateCfg";
+            this.btUpdateCfg.Size = new System.Drawing.Size(126, 39);
+            this.btUpdateCfg.TabIndex = 47;
+            this.btUpdateCfg.Text = "更新设备配置";
+            this.btUpdateCfg.UseVisualStyleBackColor = true;
+            // 
+            // btUploadCfg
+            // 
+            this.btUploadCfg.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btUploadCfg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(60)))), ((int)(((byte)(103)))));
+            this.btUploadCfg.Location = new System.Drawing.Point(191, 67);
+            this.btUploadCfg.Name = "btUploadCfg";
+            this.btUploadCfg.Size = new System.Drawing.Size(126, 39);
+            this.btUploadCfg.TabIndex = 46;
+            this.btUploadCfg.Text = "读取设备配置";
+            this.btUploadCfg.UseVisualStyleBackColor = true;
             // 
             // panel_setting_wire1
             // 
@@ -1391,6 +1414,18 @@ namespace ProfileDetection
             this.panel_setting_output.Size = new System.Drawing.Size(857, 322);
             this.panel_setting_output.TabIndex = 12;
             // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.Font = new System.Drawing.Font("宋体", 22F);
+            this.label38.ForeColor = System.Drawing.Color.Maroon;
+            this.label38.Location = new System.Drawing.Point(327, 24);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(73, 30);
+            this.label38.TabIndex = 21;
+            this.label38.Text = "输出";
+            // 
             // checkBoxOutIgnoreWhileOutActive
             // 
             this.checkBoxOutIgnoreWhileOutActive.AutoSize = true;
@@ -2049,7 +2084,7 @@ namespace ProfileDetection
             // 
             this.panel_file.BackgroundImage = global::ProfileDetection.Properties.Resources.中部背景;
             this.panel_file.Controls.Add(this.panel_file_contaner);
-            this.panel_file.Location = new System.Drawing.Point(0, 66);
+            this.panel_file.Location = new System.Drawing.Point(-1, 66);
             this.panel_file.Name = "panel_file";
             this.panel_file.Size = new System.Drawing.Size(920, 507);
             this.panel_file.TabIndex = 6;
@@ -2067,7 +2102,7 @@ namespace ProfileDetection
             // 
             this.panel1.BackgroundImage = global::ProfileDetection.Properties.Resources.廓形背景;
             this.panel1.Controls.Add(this.pictureBoxProfile);
-            this.panel1.Location = new System.Drawing.Point(48, 84);
+            this.panel1.Location = new System.Drawing.Point(84, 84);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 227);
             this.panel1.TabIndex = 7;
@@ -2092,16 +2127,17 @@ namespace ProfileDetection
             this.min,
             this.Max});
             this.dataGridViewItems.GridColor = System.Drawing.Color.Lime;
-            this.dataGridViewItems.Location = new System.Drawing.Point(48, 386);
+            this.dataGridViewItems.Location = new System.Drawing.Point(48, 374);
             this.dataGridViewItems.Name = "dataGridViewItems";
             this.dataGridViewItems.RowTemplate.Height = 23;
-            this.dataGridViewItems.Size = new System.Drawing.Size(400, 150);
+            this.dataGridViewItems.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataGridViewItems.Size = new System.Drawing.Size(472, 180);
             this.dataGridViewItems.TabIndex = 8;
             // 
             // Item
             // 
             this.Item.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Item.HeaderText = "项目";
+            this.Item.HeaderText = "检测项";
             this.Item.Name = "Item";
             // 
             // Detected
@@ -2135,16 +2171,18 @@ namespace ProfileDetection
             this.dataGridViewSingle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSingle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn4});
+            this.dataGridViewTextBoxColumn4,
+            this.isSeal});
             this.dataGridViewSingle.GridColor = System.Drawing.Color.Lime;
-            this.dataGridViewSingle.Location = new System.Drawing.Point(48, 326);
+            this.dataGridViewSingle.Location = new System.Drawing.Point(48, 317);
             this.dataGridViewSingle.Name = "dataGridViewSingle";
             this.dataGridViewSingle.RowHeadersVisible = false;
             this.dataGridViewSingle.RowTemplate.Height = 23;
-            this.dataGridViewSingle.Size = new System.Drawing.Size(400, 44);
+            this.dataGridViewSingle.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataGridViewSingle.Size = new System.Drawing.Size(472, 44);
             this.dataGridViewSingle.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn1
@@ -2153,17 +2191,17 @@ namespace ProfileDetection
             this.dataGridViewTextBoxColumn1.HeaderText = "基准序号";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "判定结果";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 80;
-            // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.HeaderText = "判断项目";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "判定结果";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 80;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -2176,6 +2214,13 @@ namespace ProfileDetection
             this.dataGridViewTextBoxColumn4.HeaderText = "缩放比例";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 80;
+            // 
+            // isSeal
+            // 
+            this.isSeal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.isSeal.HeaderText = "防水栓";
+            this.isSeal.Name = "isSeal";
+            this.isSeal.Width = 66;
             // 
             // btnCom
             // 
@@ -2208,40 +2253,6 @@ namespace ProfileDetection
             // serialPort1
             // 
             this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.Receive);
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.BackColor = System.Drawing.Color.Transparent;
-            this.label38.Font = new System.Drawing.Font("宋体", 22F);
-            this.label38.ForeColor = System.Drawing.Color.Maroon;
-            this.label38.Location = new System.Drawing.Point(327, 24);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(73, 30);
-            this.label38.TabIndex = 21;
-            this.label38.Text = "输出";
-            // 
-            // btUpdateCfg
-            // 
-            this.btUpdateCfg.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btUpdateCfg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(60)))), ((int)(((byte)(103)))));
-            this.btUpdateCfg.Location = new System.Drawing.Point(191, 112);
-            this.btUpdateCfg.Name = "btUpdateCfg";
-            this.btUpdateCfg.Size = new System.Drawing.Size(126, 39);
-            this.btUpdateCfg.TabIndex = 47;
-            this.btUpdateCfg.Text = "更新设备配置";
-            this.btUpdateCfg.UseVisualStyleBackColor = true;
-            // 
-            // btUploadCfg
-            // 
-            this.btUploadCfg.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btUploadCfg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(60)))), ((int)(((byte)(103)))));
-            this.btUploadCfg.Location = new System.Drawing.Point(191, 67);
-            this.btUploadCfg.Name = "btUploadCfg";
-            this.btUploadCfg.Size = new System.Drawing.Size(126, 39);
-            this.btUploadCfg.TabIndex = 46;
-            this.btUploadCfg.Text = "读取设备配置";
-            this.btUploadCfg.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -2340,17 +2351,7 @@ namespace ProfileDetection
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBoxProfile;
         private System.Windows.Forms.DataGridView dataGridViewItems;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Item;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Detected;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Reference;
-        private System.Windows.Forms.DataGridViewTextBoxColumn min;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Max;
         private System.Windows.Forms.DataGridView dataGridViewSingle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Button btnCom;
         private System.Windows.Forms.ComboBox comboxCom;
         private System.Windows.Forms.Timer timer1;
@@ -2503,6 +2504,17 @@ namespace ProfileDetection
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Button btUpdateCfg;
         private System.Windows.Forms.Button btUploadCfg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn isSeal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Detected;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Reference;
+        private System.Windows.Forms.DataGridViewTextBoxColumn min;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Max;
     }
 }
 
