@@ -49,12 +49,28 @@ namespace ProfileDetection
 
         private void btn_main_click(object sender,EventArgs e)
         {
+            #region 如果是设置按钮则发送“获取配置信息命令”，串口未打开则不切换界面。
+            if(sender==btn_mains[(int)btn_index_main.btn_setting])
+            {
+                if (serialPort1.IsOpen)     //如果串口打开则发送指令，否则直接退出
+                {
+                    byte[] frm = devProtocol.GetCmdFrm(Protocol.FRAME_TYPE_GC);
+                    serialPort1.Write(frm, 0, frm.Length);
+                    openDevCfgDlgTimeOut = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000;     //时间戳
+                    openDevCfgDlgTimeOut += 1000;   //timeout is 1000 ms later
+                }
+                else
+                {
+                    MessageBox.Show("请先打开串口");
+                    return;
+                }
+            }
+            #endregion
             //将四个设置按钮设置为未激活
             this.btn_instrument.BackgroundImage = ProfileDetection.Properties.Resources.设备;//this.btn_record,this.btn_setting, this.btn_setting_file
             this.btn_record.BackgroundImage = ProfileDetection.Properties.Resources.记录;
             this.btn_setting.BackgroundImage = ProfileDetection.Properties.Resources.设置;
             this.btn_setting_file.BackgroundImage = ProfileDetection.Properties.Resources.文件;
-
 
             //隐藏三个面板
             this.panel_file.Visible = false;
@@ -87,6 +103,8 @@ namespace ProfileDetection
                     break;
             }
             #endregion
+
+
         }
 
         private void btn_settings_click(object sender, EventArgs e)
@@ -315,8 +333,8 @@ namespace ProfileDetection
                         //if (dlgDevCfg.IsDisposed)
                         //    dlgDevCfg = new DevCfgDlg(this);
 
-                        //dlgDevCfg.CfgFreameDeal(frameRX);
-                        //dlgDevCfg.UpdateShow(devCfg);
+                        CfgFreameDeal(frameRX);//dlgDevCfg.CfgFreameDeal(frameRX);
+                        UpdateShow(devCfg);//dlgDevCfg.UpdateShow(devCfg);
                         //if (openDevCfgDlgTimeOut > 0)
                         //{
                         //    dlgDevCfg.Show();
@@ -342,6 +360,188 @@ namespace ProfileDetection
 
         }
 
+        public void UpdateShow(CFG_T cfg)
+        {
+            //modelNum
+            cBoxModelNum.Text = cfg.modelNum.ToString();
+
+            //如果只有一个基准线型，则基准线型2相关设置灰化
+            if (cBoxModelNum.Text == "1")
+            {
+                btn_setting_wire2.Enabled = false; 
+            }
+            else
+            {
+                btn_setting_wire2.Enabled = true; 
+            }
+
+            ckBoxAutoAdjSpeed.Checked = (cfg.isSpeedAdj != 0);      //速度补偿
+            cBoxLearnNum.Text = cfg.learnNum.ToString();            //学习数量
+            tBoxSensorSensitivity.Text = cfg.senThresh.ToString();  //传感器灵敏度%
+
+
+            //检测模式
+            ANAL_TYPE type = cfg.wire[0].tol.analEN;
+            ckBoxCorePos1.Checked = IS_ANAL_CORE_POS(type);
+            ckBoxCoreWidth1.Checked = IS_ANAL_CORE_WIDTH(type);
+            ckBoxSealPos1.Checked = IS_ANAL_SEAL_POS(type);
+            ckBoxSealWidth1.Checked = IS_ANAL_SEAL_WIDTH(type);
+            ckBoxStripPos1.Checked = IS_ANAL_STRIP_POS(type);
+            ckBoxStripLen1.Checked = IS_ANAL_STRIP_LEN(type);
+            ckBoxSplay1.Checked = IS_ANAL_SPLAY(type);
+            ckBoxSeal1.Checked = IS_ANAL_IS_SEAL(type);
+            ckBoxSealOri1.Checked = IS_ANAL_SEAL_ORI(type);
+
+            type = cfg.wire[1].tol.analEN;
+            ckBoxCorePos2.Checked = IS_ANAL_CORE_POS(type);
+            ckBoxCoreWidth2.Checked = IS_ANAL_CORE_WIDTH(type);
+            ckBoxSealPos2.Checked = IS_ANAL_SEAL_POS(type);
+            ckBoxSealWidth2.Checked = IS_ANAL_SEAL_WIDTH(type);
+            ckBoxStripPos2.Checked = IS_ANAL_STRIP_POS(type);
+            ckBoxStripLen2.Checked = IS_ANAL_STRIP_LEN(type);
+            ckBoxSplay2.Checked = IS_ANAL_SPLAY(type);
+            ckBoxSeal2.Checked = IS_ANAL_IS_SEAL(type);
+            ckBoxSealOri2.Checked = IS_ANAL_SEAL_ORI(type);
+
+            //检测参数设置
+            tBoxCorePosN1.Text = cfg.wire[0].tol.corePosN.ToString() + "mm";
+            tBoxCorePosN2.Text = cfg.wire[1].tol.corePosN.ToString() + "mm";
+            tBoxCorePosP1.Text = cfg.wire[0].tol.corePosP.ToString() + "mm";
+            tBoxCorePosP2.Text = cfg.wire[1].tol.corePosP.ToString() + "mm";
+
+            tBoxSealPosN1.Text = cfg.wire[0].tol.sealPosN.ToString() + "mm";
+            tBoxSealPosN2.Text = cfg.wire[1].tol.sealPosN.ToString() + "mm";
+            tBoxSealPosP1.Text = cfg.wire[0].tol.sealPosP.ToString() + "mm";
+            tBoxSealPosP2.Text = cfg.wire[1].tol.sealPosP.ToString() + "mm";
+
+            tBoxStripPosN1.Text = cfg.wire[0].tol.stripPosN.ToString() + "mm";
+            tBoxStripPosN2.Text = cfg.wire[1].tol.stripPosN.ToString() + "mm";
+            tBoxStripPosP1.Text = cfg.wire[0].tol.stripPosP.ToString() + "mm";
+            tBoxStripPosP2.Text = cfg.wire[1].tol.stripPosP.ToString() + "mm";
+
+            tBoxStripLenN1.Text = cfg.wire[0].tol.stripLenN.ToString() + "mm";
+            tBoxStripLenN2.Text = cfg.wire[1].tol.stripLenN.ToString() + "mm";
+            tBoxStripLenP1.Text = cfg.wire[0].tol.stripLenP.ToString() + "mm";
+            tBoxStripLenP2.Text = cfg.wire[1].tol.stripLenP.ToString() + "mm";
+
+            tBoxCoreWidthN1.Text = cfg.wire[0].tol.coreWidthN.ToString() + "%";
+            tBoxCoreWidthN2.Text = cfg.wire[1].tol.coreWidthN.ToString() + "%";
+            tBoxCoreWidthP1.Text = cfg.wire[0].tol.coreWidthP.ToString() + "%";
+            tBoxCoreWidthP2.Text = cfg.wire[1].tol.coreWidthP.ToString() + "%";
+
+            tBoxSealWidthN1.Text = cfg.wire[0].tol.sealWidthN.ToString() + "%";
+            tBoxSealWidthN2.Text = cfg.wire[1].tol.sealWidthN.ToString() + "%";
+            tBoxSealWidthP1.Text = cfg.wire[0].tol.sealWidthP.ToString() + "%";
+            tBoxSealWidthP2.Text = cfg.wire[1].tol.sealWidthP.ToString() + "%";
+
+            tBoxVariationFilter1.Text = cfg.wire[0].tol.variationFilter.ToString() + "mm";
+            tBoxVariationFilter2.Text = cfg.wire[1].tol.variationFilter.ToString() + "mm";
+            tBoxSealLimit1.Text = cfg.wire[0].tol.sealLimit.ToString();
+            tBoxSealLimit2.Text = cfg.wire[1].tol.sealLimit.ToString();
+            tBoxStripLimit1.Text = cfg.wire[0].tol.stripLimit.ToString();
+            tBoxStripLimit2.Text = cfg.wire[1].tol.stripLimit.ToString();
+            tBoxSealRatio1.Text = cfg.wire[0].tol.sealRatio.ToString();
+            tBoxSealRatio2.Text = cfg.wire[1].tol.sealRatio.ToString();
+
+            //输入 怎样使用控件数组防止代码拷贝？
+            TYPE_INPUT input = cfg.inputMode[0];
+            if (IS_INPUT_LEARN(input))
+                cBoxInputModeLvl1.Text = "进入学习模式";
+            else if (IS_INPUT_FIRING(input))
+                cBoxInputModeLvl1.Text = "触发采样";
+            else if (IS_INPUT_SETUP(input))
+                cBoxInputModeLvl1.Text = "进入设置模式";
+            if (IS_INPPUT_POS(input))
+                cBoxInputPolLvl1.Text = "上升沿触发";
+            else
+                cBoxInputPolLvl1.Text = "下降沿触发";
+
+
+            input = cfg.inputMode[1];
+            if (IS_INPUT_LEARN(input))
+                cBoxInputModeLvl2.Text = "进入学习模式";
+            else if (IS_INPUT_FIRING(input))
+                cBoxInputModeLvl2.Text = "触发采样";
+            else if (IS_INPUT_SETUP(input))
+                cBoxInputModeLvl2.Text = "进入设置模式";
+            if (IS_INPPUT_POS(input))
+                cBoxInputPolLvl2.Text = "上升沿触发";
+            else
+                cBoxInputPolLvl2.Text = "下降沿触发";
+
+            input = cfg.inputMode[2];
+            if (IS_INPUT_LEARN(input))
+                cBoxInputModeLvl3.Text = "进入学习模式";
+            else if (IS_INPUT_FIRING(input))
+                cBoxInputModeLvl3.Text = "触发采样";
+            else if (IS_INPUT_SETUP(input))
+                cBoxInputModeLvl3.Text = "进入设置模式";
+            if (IS_INPPUT_POS(input))
+                cBoxInputPolLvl3.Text = "上升沿触发";
+            else
+                cBoxInputPolLvl3.Text = "下降沿触发";
+
+            input = cfg.inputMode[3];
+            if (IS_INPUT_LEARN(input))
+                cBoxInputModeLvl4.Text = "进入学习模式";
+            else if (IS_INPUT_FIRING(input))
+                cBoxInputModeLvl4.Text = "触发采样";
+            else if (IS_INPUT_SETUP(input))
+                cBoxInputModeLvl4.Text = "进入设置模式";
+            if (IS_INPPUT_POS(input))
+                cBoxInputPolLvl4.Text = "上升沿触发";
+            else
+                cBoxInputPolLvl4.Text = "下降沿触发";
+
+            //输出
+            TYPE_OUTPUT output = cfg.outputMode[0];
+            if (IS_OUTPUT_NO(output))
+                rBtnNO1.Checked = true;
+            else
+                rBtnNC1.Checked = true;
+
+            if (IS_OUTPUT_ANY(output))
+                cBoxOutMode1.Text = "合格/不良品都输出脉冲";
+            else if (IS_OUTPUT_PASS(output))
+                cBoxOutMode1.Text = "合格品输出脉冲";
+            else if (IS_OUTPUT_FAIL(output))
+                cBoxOutMode1.Text = "不良品输出脉冲";
+
+            if (IS_OUTPUT_ING_FIRST(output))
+                rBtnIgnoreFirst1.Checked = true;
+            else if (IS_OUTPUT_ING_LEARN(output))
+                rBtnIgnoreLearn1.Checked = true;
+            else
+                rBtnNormal1.Checked = true;
+            tBoxOutDelay1.Text = cfg.outputDelay[0].ToString();
+            tBoxDuration1.Text = cfg.outputWidth[0].ToString();
+
+            output = cfg.outputMode[1];
+            if (IS_OUTPUT_NO(output))
+                rBtnNO2.Checked = true;
+            else
+                rBtnNC2.Checked = true;
+
+            if (IS_OUTPUT_PASS(output))
+                cBoxOutMode2.Text = "合格品输出脉冲";
+            else if (IS_OUTPUT_FAIL(output))
+                cBoxOutMode2.Text = "不良品输出脉冲";
+            else if (IS_OUTPUT_ANY(output))
+                cBoxOutMode2.Text = "合格/不良品都输出脉冲";
+
+            if (IS_OUTPUT_ING_FIRST(output))
+                rBtnIgnoreFirst2.Checked = true;
+            else if (IS_OUTPUT_ING_LEARN(output))
+                rBtnIgnoreLearn2.Checked = true;
+            else
+                rBtnNormal2.Checked = true;
+            tBoxOutDelay2.Text = cfg.outputDelay[1].ToString();
+            tBoxDuration2.Text = cfg.outputWidth[1].ToString();
+
+            //输出有效期间忽略输入（忽略返程阶段）
+            checkBoxOutIgnoreWhileOutActive.Checked = (cfg.isIgnInWhenOut != 0);
+        }
+
         #region 配置相关
         //解析串口数据帧，更新显示
         public void CfgFreameDeal(COMM_FRAME_T frame)
@@ -357,6 +557,35 @@ namespace ProfileDetection
             }
         }
 
+        //获取输出引脚属性
+        public bool IS_OUTPUT_NO(TYPE_OUTPUT outputMode) { return TYPE_OUTPUT.OUTPUT_NO == (TYPE_OUTPUT)((UInt32)outputMode & 0x0001); }
+        public bool IS_OUTPUT_NC(TYPE_OUTPUT outputMode) { return TYPE_OUTPUT.OUTPUT_NC == (TYPE_OUTPUT)((UInt32)outputMode & 0x0001); }
+        public bool IS_OUTPUT_PASS(TYPE_OUTPUT outputMode) { return TYPE_OUTPUT.OUTPUT_PASS == (TYPE_OUTPUT)((UInt32)outputMode & (UInt32)TYPE_OUTPUT.OUTPUT_PASS); }
+        public bool IS_OUTPUT_FAIL(TYPE_OUTPUT outputMode) { return TYPE_OUTPUT.OUTPUT_FAIL == (TYPE_OUTPUT)((UInt32)outputMode & (UInt32)TYPE_OUTPUT.OUTPUT_FAIL); }
+        public bool IS_OUTPUT_ANY(TYPE_OUTPUT outputMode) { return TYPE_OUTPUT.OUTPUT_ANY == (TYPE_OUTPUT)((UInt32)outputMode & (UInt32)TYPE_OUTPUT.OUTPUT_ANY); }
+        public bool IS_OUTPUT_ING_FIRST(TYPE_OUTPUT outputMode) { return TYPE_OUTPUT.OUTPUT_IGN_FIRST == (TYPE_OUTPUT)((UInt32)outputMode & (UInt32)TYPE_OUTPUT.OUTPUT_IGN_FIRST); }
+        public bool IS_OUTPUT_ING_LEARN(TYPE_OUTPUT outputMode) { return TYPE_OUTPUT.OUTPUT_IGN_LEARN == (TYPE_OUTPUT)((UInt32)outputMode & (UInt32)TYPE_OUTPUT.OUTPUT_IGN_LEARN); }
+        public bool IS_OUTPUT_SEN_EN(TYPE_OUTPUT outputMode) { return TYPE_OUTPUT.OUTPUT_SEN_EN == (TYPE_OUTPUT)((UInt32)outputMode & (UInt32)TYPE_OUTPUT.OUTPUT_SEN_EN); }
+
+        //获取输入引脚属性
+        public bool IS_INPUT_EDGE(TYPE_INPUT input) { return 0 == ((UInt32)input & (UInt32)TYPE_INPUT.INPUT_TRIG); }
+        public bool IS_INPUT_LEVEL(TYPE_INPUT input) { return TYPE_INPUT.INPUT_TRIG == (TYPE_INPUT)((UInt32)input & (UInt32)TYPE_INPUT.INPUT_TRIG); }
+        public bool IS_INPUT_LEARN(TYPE_INPUT input) { return TYPE_INPUT.INPUT_LEARN == (TYPE_INPUT)((UInt32)input & 0x0006); }
+        public bool IS_INPUT_FIRING(TYPE_INPUT input) { return TYPE_INPUT.INPUT_FIRING == (TYPE_INPUT)((UInt32)input & 0x0006); }
+        public bool IS_INPUT_SETUP(TYPE_INPUT input) { return TYPE_INPUT.INPUT_SETUP == (TYPE_INPUT)((UInt32)input & 0x0006); }
+        public bool IS_INPPUT_POS(TYPE_INPUT input) { return TYPE_INPUT.INPUT_POS == (TYPE_INPUT)((UInt32)input & (UInt32)TYPE_INPUT.INPUT_POS); }
+        public bool IS_INPPUT_NEG(TYPE_INPUT input) { return TYPE_INPUT.INPUT_NEG == (TYPE_INPUT)((UInt32)input & (UInt32)TYPE_INPUT.INPUT_NEG); }
+
+        //获取检测模式
+        public bool IS_ANAL_CORE_POS(ANAL_TYPE type) { return (UInt32)ANAL_TYPE.ANAL_CORE_POS == ((UInt32)type & (UInt32)ANAL_TYPE.ANAL_CORE_POS); }
+        public bool IS_ANAL_CORE_WIDTH(ANAL_TYPE type) { return (UInt32)ANAL_TYPE.ANAL_CORE_WIDTH == ((UInt32)type & (UInt32)ANAL_TYPE.ANAL_CORE_WIDTH); }
+        public bool IS_ANAL_SEAL_POS(ANAL_TYPE type) { return (UInt32)ANAL_TYPE.ANAL_SEAL_POS == ((UInt32)type & (UInt32)ANAL_TYPE.ANAL_SEAL_POS); }
+        public bool IS_ANAL_SEAL_WIDTH(ANAL_TYPE type) { return (UInt32)ANAL_TYPE.ANAL_SEAL_WIDTH == ((UInt32)type & (UInt32)ANAL_TYPE.ANAL_SEAL_WIDTH); }
+        public bool IS_ANAL_STRIP_POS(ANAL_TYPE type) { return (UInt32)ANAL_TYPE.ANAL_STRIP_POS == ((UInt32)type & (UInt32)ANAL_TYPE.ANAL_STRIP_POS); }
+        public bool IS_ANAL_STRIP_LEN(ANAL_TYPE type) { return (UInt32)ANAL_TYPE.ANAL_STRIP_LEN == ((UInt32)type & (UInt32)ANAL_TYPE.ANAL_STRIP_LEN); }
+        public bool IS_ANAL_SPLAY(ANAL_TYPE type) { return (UInt32)ANAL_TYPE.ANAL_SPLAY == ((UInt32)type & (UInt32)ANAL_TYPE.ANAL_SPLAY); }
+        public bool IS_ANAL_IS_SEAL(ANAL_TYPE type) { return (UInt32)ANAL_TYPE.ANAL_IS_SEAL == ((UInt32)type & (UInt32)ANAL_TYPE.ANAL_IS_SEAL); }       //是否有防水栓
+        public bool IS_ANAL_SEAL_ORI(ANAL_TYPE type) { return (UInt32)ANAL_TYPE.ANAL_SEAL_ORI == ((UInt32)type & (UInt32)ANAL_TYPE.ANAL_SEAL_ORI); }    //防水栓方向
         /*********************************************************************************************************
            检验参数有效性。如果参数无效，设为默认参数
        */

@@ -44,39 +44,39 @@ namespace ProfileDetection
             this.btUploadCfg = new System.Windows.Forms.Button();
             this.panel_setting_wire1 = new System.Windows.Forms.Panel();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tBoxSealRatio2 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tBoxStripLimit2 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tBoxSealLimit2 = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.tBoxVariationFilter2 = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.ckBoxSealOri2 = new System.Windows.Forms.CheckBox();
+            this.tBoxSprayP2 = new System.Windows.Forms.TextBox();
+            this.tBoxStripLenP2 = new System.Windows.Forms.TextBox();
+            this.tBoxStripLenN2 = new System.Windows.Forms.TextBox();
+            this.tBoxSealWidthP2 = new System.Windows.Forms.TextBox();
+            this.tBoxSealWidthN2 = new System.Windows.Forms.TextBox();
+            this.tBoxCoreWidthP2 = new System.Windows.Forms.TextBox();
+            this.tBoxCoreWidthN2 = new System.Windows.Forms.TextBox();
+            this.tBoxStripPosP2 = new System.Windows.Forms.TextBox();
+            this.tBoxStripPosN2 = new System.Windows.Forms.TextBox();
+            this.tBoxSealPosP2 = new System.Windows.Forms.TextBox();
+            this.tBoxSealPosN2 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.tBoxCorePosP2 = new System.Windows.Forms.TextBox();
+            this.tBoxCorePosN2 = new System.Windows.Forms.TextBox();
+            this.ckBoxSeal2 = new System.Windows.Forms.CheckBox();
+            this.ckBoxSplay2 = new System.Windows.Forms.CheckBox();
+            this.ckBoxStripLen2 = new System.Windows.Forms.CheckBox();
+            this.ckBoxSealWidth2 = new System.Windows.Forms.CheckBox();
+            this.ckBoxCoreWidth2 = new System.Windows.Forms.CheckBox();
+            this.ckBoxStripPos2 = new System.Windows.Forms.CheckBox();
+            this.ckBoxSealPos2 = new System.Windows.Forms.CheckBox();
+            this.ckBoxCorePos2 = new System.Windows.Forms.CheckBox();
             this.panel_setting_wire2 = new System.Windows.Forms.Panel();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.tBoxSealRatio1 = new System.Windows.Forms.TextBox();
@@ -115,19 +115,19 @@ namespace ProfileDetection
             this.panel_setting_input = new System.Windows.Forms.Panel();
             this.grb_settings_input4 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.cBoxInputPolLvl4 = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.cBoxInputModeLvl4 = new System.Windows.Forms.ComboBox();
             this.grb_settings_input3 = new System.Windows.Forms.GroupBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.cBoxInputPolLvl3 = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.cBoxInputModeLvl3 = new System.Windows.Forms.ComboBox();
             this.grb_settings_input2 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.cBoxInputPolLvl2 = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.cBoxInputModeLvl2 = new System.Windows.Forms.ComboBox();
             this.tBoxMinSetupDuration = new System.Windows.Forms.TextBox();
             this.tBoxFiringTimeOut = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
@@ -142,25 +142,25 @@ namespace ProfileDetection
             this.checkBoxOutIgnoreWhileOutActive = new System.Windows.Forms.CheckBox();
             this.group_output2 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.rBtnIgnoreLearn2 = new System.Windows.Forms.RadioButton();
+            this.rBtnIgnoreFirst2 = new System.Windows.Forms.RadioButton();
+            this.rBtnNormal2 = new System.Windows.Forms.RadioButton();
+            this.cBoxOutRstMode2 = new System.Windows.Forms.ComboBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.rBtnNC2 = new System.Windows.Forms.RadioButton();
+            this.rBtnNO2 = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tBoxDuration2 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tBoxOutDelay2 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cBoxOutMode2 = new System.Windows.Forms.ComboBox();
+            this.cBoxOutWire2 = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.group_output1 = new System.Windows.Forms.GroupBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.cBoxOutRstMode1 = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rBtnIgnoreLearn1 = new System.Windows.Forms.RadioButton();
             this.rBtnIgnoreFirst1 = new System.Windows.Forms.RadioButton();
@@ -175,21 +175,21 @@ namespace ProfileDetection
             this.label6 = new System.Windows.Forms.Label();
             this.tBoxOutDelay1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.cBoxOutMode1 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.cBoxOutWire1 = new System.Windows.Forms.ComboBox();
             this.btn_setting_wire2 = new System.Windows.Forms.Button();
             this.btn_setting_wire1 = new System.Windows.Forms.Button();
             this.btn_setting_output = new System.Windows.Forms.Button();
             this.btn_setting_input = new System.Windows.Forms.Button();
             this.btn_setting_general = new System.Windows.Forms.Button();
             this.panel_setting_contaner = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.ckBoxAutoAdjSpeed = new System.Windows.Forms.CheckBox();
+            this.cBoxLearnNum = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cBoxModelNum = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tBoxSensorSensitivity = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Sen = new System.Windows.Forms.Button();
@@ -372,13 +372,13 @@ namespace ProfileDetection
             // groupBox11
             // 
             this.groupBox11.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox11.Controls.Add(this.textBox4);
+            this.groupBox11.Controls.Add(this.tBoxSealRatio2);
             this.groupBox11.Controls.Add(this.label26);
-            this.groupBox11.Controls.Add(this.textBox5);
+            this.groupBox11.Controls.Add(this.tBoxStripLimit2);
             this.groupBox11.Controls.Add(this.label27);
-            this.groupBox11.Controls.Add(this.textBox6);
+            this.groupBox11.Controls.Add(this.tBoxSealLimit2);
             this.groupBox11.Controls.Add(this.label28);
-            this.groupBox11.Controls.Add(this.textBox7);
+            this.groupBox11.Controls.Add(this.tBoxVariationFilter2);
             this.groupBox11.Controls.Add(this.label29);
             this.groupBox11.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox11.Location = new System.Drawing.Point(548, 40);
@@ -389,14 +389,14 @@ namespace ProfileDetection
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "高级设置";
             // 
-            // textBox4
+            // tBoxSealRatio2
             // 
-            this.textBox4.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox4.Location = new System.Drawing.Point(150, 115);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(56, 21);
-            this.textBox4.TabIndex = 7;
-            this.textBox4.Text = "85";
+            this.tBoxSealRatio2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxSealRatio2.Location = new System.Drawing.Point(150, 115);
+            this.tBoxSealRatio2.Name = "tBoxSealRatio2";
+            this.tBoxSealRatio2.Size = new System.Drawing.Size(56, 21);
+            this.tBoxSealRatio2.TabIndex = 7;
+            this.tBoxSealRatio2.Text = "85";
             // 
             // label26
             // 
@@ -408,14 +408,14 @@ namespace ProfileDetection
             this.label26.Text = "防水栓方向判别系数";
             this.label26.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // textBox5
+            // tBoxStripLimit2
             // 
-            this.textBox5.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox5.Location = new System.Drawing.Point(150, 88);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(56, 21);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.Text = "50";
+            this.tBoxStripLimit2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxStripLimit2.Location = new System.Drawing.Point(150, 88);
+            this.tBoxStripLimit2.Name = "tBoxStripLimit2";
+            this.tBoxStripLimit2.Size = new System.Drawing.Size(56, 21);
+            this.tBoxStripLimit2.TabIndex = 5;
+            this.tBoxStripLimit2.Text = "50";
             // 
             // label27
             // 
@@ -427,14 +427,14 @@ namespace ProfileDetection
             this.label27.Text = "剥切位置识别系数";
             this.label27.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // textBox6
+            // tBoxSealLimit2
             // 
-            this.textBox6.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox6.Location = new System.Drawing.Point(150, 54);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(56, 21);
-            this.textBox6.TabIndex = 3;
-            this.textBox6.Text = "100";
+            this.tBoxSealLimit2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxSealLimit2.Location = new System.Drawing.Point(150, 54);
+            this.tBoxSealLimit2.Name = "tBoxSealLimit2";
+            this.tBoxSealLimit2.Size = new System.Drawing.Size(56, 21);
+            this.tBoxSealLimit2.TabIndex = 3;
+            this.tBoxSealLimit2.Text = "100";
             // 
             // label28
             // 
@@ -446,14 +446,14 @@ namespace ProfileDetection
             this.label28.Text = "防水栓位置识别系数";
             this.label28.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // textBox7
+            // tBoxVariationFilter2
             // 
-            this.textBox7.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox7.Location = new System.Drawing.Point(150, 27);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(56, 21);
-            this.textBox7.TabIndex = 1;
-            this.textBox7.Text = "1.250mm";
+            this.tBoxVariationFilter2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxVariationFilter2.Location = new System.Drawing.Point(150, 27);
+            this.tBoxVariationFilter2.Name = "tBoxVariationFilter2";
+            this.tBoxVariationFilter2.Size = new System.Drawing.Size(56, 21);
+            this.tBoxVariationFilter2.TabIndex = 1;
+            this.tBoxVariationFilter2.Text = "1.250mm";
             // 
             // label29
             // 
@@ -468,30 +468,30 @@ namespace ProfileDetection
             // groupBox13
             // 
             this.groupBox13.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox13.Controls.Add(this.checkBox2);
-            this.groupBox13.Controls.Add(this.textBox8);
-            this.groupBox13.Controls.Add(this.textBox9);
-            this.groupBox13.Controls.Add(this.textBox10);
-            this.groupBox13.Controls.Add(this.textBox11);
-            this.groupBox13.Controls.Add(this.textBox12);
-            this.groupBox13.Controls.Add(this.textBox13);
-            this.groupBox13.Controls.Add(this.textBox14);
-            this.groupBox13.Controls.Add(this.textBox15);
-            this.groupBox13.Controls.Add(this.textBox16);
-            this.groupBox13.Controls.Add(this.textBox17);
-            this.groupBox13.Controls.Add(this.textBox18);
+            this.groupBox13.Controls.Add(this.ckBoxSealOri2);
+            this.groupBox13.Controls.Add(this.tBoxSprayP2);
+            this.groupBox13.Controls.Add(this.tBoxStripLenP2);
+            this.groupBox13.Controls.Add(this.tBoxStripLenN2);
+            this.groupBox13.Controls.Add(this.tBoxSealWidthP2);
+            this.groupBox13.Controls.Add(this.tBoxSealWidthN2);
+            this.groupBox13.Controls.Add(this.tBoxCoreWidthP2);
+            this.groupBox13.Controls.Add(this.tBoxCoreWidthN2);
+            this.groupBox13.Controls.Add(this.tBoxStripPosP2);
+            this.groupBox13.Controls.Add(this.tBoxStripPosN2);
+            this.groupBox13.Controls.Add(this.tBoxSealPosP2);
+            this.groupBox13.Controls.Add(this.tBoxSealPosN2);
             this.groupBox13.Controls.Add(this.label36);
             this.groupBox13.Controls.Add(this.label37);
-            this.groupBox13.Controls.Add(this.textBox19);
-            this.groupBox13.Controls.Add(this.textBox20);
-            this.groupBox13.Controls.Add(this.checkBox3);
-            this.groupBox13.Controls.Add(this.checkBox4);
-            this.groupBox13.Controls.Add(this.checkBox5);
-            this.groupBox13.Controls.Add(this.checkBox6);
-            this.groupBox13.Controls.Add(this.checkBox7);
-            this.groupBox13.Controls.Add(this.checkBox8);
-            this.groupBox13.Controls.Add(this.checkBox9);
-            this.groupBox13.Controls.Add(this.checkBox10);
+            this.groupBox13.Controls.Add(this.tBoxCorePosP2);
+            this.groupBox13.Controls.Add(this.tBoxCorePosN2);
+            this.groupBox13.Controls.Add(this.ckBoxSeal2);
+            this.groupBox13.Controls.Add(this.ckBoxSplay2);
+            this.groupBox13.Controls.Add(this.ckBoxStripLen2);
+            this.groupBox13.Controls.Add(this.ckBoxSealWidth2);
+            this.groupBox13.Controls.Add(this.ckBoxCoreWidth2);
+            this.groupBox13.Controls.Add(this.ckBoxStripPos2);
+            this.groupBox13.Controls.Add(this.ckBoxSealPos2);
+            this.groupBox13.Controls.Add(this.ckBoxCorePos2);
             this.groupBox13.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox13.Location = new System.Drawing.Point(82, 40);
             this.groupBox13.Name = "groupBox13";
@@ -500,116 +500,116 @@ namespace ProfileDetection
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "线型1检测参数";
             // 
-            // checkBox2
+            // ckBoxSealOri2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Checked = true;
-            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(69, 232);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(84, 16);
-            this.checkBox2.TabIndex = 47;
-            this.checkBox2.Text = "防水栓方向";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.ckBoxSealOri2.AutoSize = true;
+            this.ckBoxSealOri2.Checked = true;
+            this.ckBoxSealOri2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ckBoxSealOri2.Location = new System.Drawing.Point(69, 232);
+            this.ckBoxSealOri2.Name = "ckBoxSealOri2";
+            this.ckBoxSealOri2.Size = new System.Drawing.Size(84, 16);
+            this.ckBoxSealOri2.TabIndex = 47;
+            this.ckBoxSealOri2.Text = "防水栓方向";
+            this.ckBoxSealOri2.UseVisualStyleBackColor = true;
             // 
-            // textBox8
+            // tBoxSprayP2
             // 
-            this.textBox8.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox8.Location = new System.Drawing.Point(288, 189);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(61, 21);
-            this.textBox8.TabIndex = 46;
-            this.textBox8.Text = "50%";
+            this.tBoxSprayP2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxSprayP2.Location = new System.Drawing.Point(288, 189);
+            this.tBoxSprayP2.Name = "tBoxSprayP2";
+            this.tBoxSprayP2.Size = new System.Drawing.Size(61, 21);
+            this.tBoxSprayP2.TabIndex = 46;
+            this.tBoxSprayP2.Text = "50%";
             // 
-            // textBox9
+            // tBoxStripLenP2
             // 
-            this.textBox9.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox9.Location = new System.Drawing.Point(288, 162);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(61, 21);
-            this.textBox9.TabIndex = 45;
-            this.textBox9.Text = "2.000mm";
+            this.tBoxStripLenP2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxStripLenP2.Location = new System.Drawing.Point(288, 162);
+            this.tBoxStripLenP2.Name = "tBoxStripLenP2";
+            this.tBoxStripLenP2.Size = new System.Drawing.Size(61, 21);
+            this.tBoxStripLenP2.TabIndex = 45;
+            this.tBoxStripLenP2.Text = "2.000mm";
             // 
-            // textBox10
+            // tBoxStripLenN2
             // 
-            this.textBox10.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox10.Location = new System.Drawing.Point(203, 162);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(61, 21);
-            this.textBox10.TabIndex = 44;
-            this.textBox10.Text = "2.000mm";
+            this.tBoxStripLenN2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxStripLenN2.Location = new System.Drawing.Point(203, 162);
+            this.tBoxStripLenN2.Name = "tBoxStripLenN2";
+            this.tBoxStripLenN2.Size = new System.Drawing.Size(61, 21);
+            this.tBoxStripLenN2.TabIndex = 44;
+            this.tBoxStripLenN2.Text = "2.000mm";
             // 
-            // textBox11
+            // tBoxSealWidthP2
             // 
-            this.textBox11.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox11.Location = new System.Drawing.Point(288, 135);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(61, 21);
-            this.textBox11.TabIndex = 43;
-            this.textBox11.Text = "10%";
+            this.tBoxSealWidthP2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxSealWidthP2.Location = new System.Drawing.Point(288, 135);
+            this.tBoxSealWidthP2.Name = "tBoxSealWidthP2";
+            this.tBoxSealWidthP2.Size = new System.Drawing.Size(61, 21);
+            this.tBoxSealWidthP2.TabIndex = 43;
+            this.tBoxSealWidthP2.Text = "10%";
             // 
-            // textBox12
+            // tBoxSealWidthN2
             // 
-            this.textBox12.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox12.Location = new System.Drawing.Point(203, 135);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(61, 21);
-            this.textBox12.TabIndex = 42;
-            this.textBox12.Text = "10%";
+            this.tBoxSealWidthN2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxSealWidthN2.Location = new System.Drawing.Point(203, 135);
+            this.tBoxSealWidthN2.Name = "tBoxSealWidthN2";
+            this.tBoxSealWidthN2.Size = new System.Drawing.Size(61, 21);
+            this.tBoxSealWidthN2.TabIndex = 42;
+            this.tBoxSealWidthN2.Text = "10%";
             // 
-            // textBox13
+            // tBoxCoreWidthP2
             // 
-            this.textBox13.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox13.Location = new System.Drawing.Point(288, 108);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(61, 21);
-            this.textBox13.TabIndex = 41;
-            this.textBox13.Text = "10%";
+            this.tBoxCoreWidthP2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxCoreWidthP2.Location = new System.Drawing.Point(288, 108);
+            this.tBoxCoreWidthP2.Name = "tBoxCoreWidthP2";
+            this.tBoxCoreWidthP2.Size = new System.Drawing.Size(61, 21);
+            this.tBoxCoreWidthP2.TabIndex = 41;
+            this.tBoxCoreWidthP2.Text = "10%";
             // 
-            // textBox14
+            // tBoxCoreWidthN2
             // 
-            this.textBox14.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox14.Location = new System.Drawing.Point(203, 108);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(61, 21);
-            this.textBox14.TabIndex = 40;
-            this.textBox14.Text = "10%";
+            this.tBoxCoreWidthN2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxCoreWidthN2.Location = new System.Drawing.Point(203, 108);
+            this.tBoxCoreWidthN2.Name = "tBoxCoreWidthN2";
+            this.tBoxCoreWidthN2.Size = new System.Drawing.Size(61, 21);
+            this.tBoxCoreWidthN2.TabIndex = 40;
+            this.tBoxCoreWidthN2.Text = "10%";
             // 
-            // textBox15
+            // tBoxStripPosP2
             // 
-            this.textBox15.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox15.Location = new System.Drawing.Point(288, 81);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(61, 21);
-            this.textBox15.TabIndex = 39;
-            this.textBox15.Text = "2.000mm";
+            this.tBoxStripPosP2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxStripPosP2.Location = new System.Drawing.Point(288, 81);
+            this.tBoxStripPosP2.Name = "tBoxStripPosP2";
+            this.tBoxStripPosP2.Size = new System.Drawing.Size(61, 21);
+            this.tBoxStripPosP2.TabIndex = 39;
+            this.tBoxStripPosP2.Text = "2.000mm";
             // 
-            // textBox16
+            // tBoxStripPosN2
             // 
-            this.textBox16.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox16.Location = new System.Drawing.Point(203, 81);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(61, 21);
-            this.textBox16.TabIndex = 38;
-            this.textBox16.Text = "2.000mm";
+            this.tBoxStripPosN2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxStripPosN2.Location = new System.Drawing.Point(203, 81);
+            this.tBoxStripPosN2.Name = "tBoxStripPosN2";
+            this.tBoxStripPosN2.Size = new System.Drawing.Size(61, 21);
+            this.tBoxStripPosN2.TabIndex = 38;
+            this.tBoxStripPosN2.Text = "2.000mm";
             // 
-            // textBox17
+            // tBoxSealPosP2
             // 
-            this.textBox17.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox17.Location = new System.Drawing.Point(288, 56);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(61, 21);
-            this.textBox17.TabIndex = 37;
-            this.textBox17.Text = "2.000mm";
+            this.tBoxSealPosP2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxSealPosP2.Location = new System.Drawing.Point(288, 56);
+            this.tBoxSealPosP2.Name = "tBoxSealPosP2";
+            this.tBoxSealPosP2.Size = new System.Drawing.Size(61, 21);
+            this.tBoxSealPosP2.TabIndex = 37;
+            this.tBoxSealPosP2.Text = "2.000mm";
             // 
-            // textBox18
+            // tBoxSealPosN2
             // 
-            this.textBox18.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox18.Location = new System.Drawing.Point(203, 56);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(61, 21);
-            this.textBox18.TabIndex = 36;
-            this.textBox18.Text = "2.000mm";
+            this.tBoxSealPosN2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxSealPosN2.Location = new System.Drawing.Point(203, 56);
+            this.tBoxSealPosN2.Name = "tBoxSealPosN2";
+            this.tBoxSealPosN2.Size = new System.Drawing.Size(61, 21);
+            this.tBoxSealPosN2.TabIndex = 36;
+            this.tBoxSealPosN2.Text = "2.000mm";
             // 
             // label36
             // 
@@ -629,105 +629,105 @@ namespace ProfileDetection
             this.label37.TabIndex = 34;
             this.label37.Text = "负偏差";
             // 
-            // textBox19
+            // tBoxCorePosP2
             // 
-            this.textBox19.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox19.Location = new System.Drawing.Point(288, 29);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(61, 21);
-            this.textBox19.TabIndex = 33;
-            this.textBox19.Text = "2.000mm";
+            this.tBoxCorePosP2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxCorePosP2.Location = new System.Drawing.Point(288, 29);
+            this.tBoxCorePosP2.Name = "tBoxCorePosP2";
+            this.tBoxCorePosP2.Size = new System.Drawing.Size(61, 21);
+            this.tBoxCorePosP2.TabIndex = 33;
+            this.tBoxCorePosP2.Text = "2.000mm";
             // 
-            // textBox20
+            // tBoxCorePosN2
             // 
-            this.textBox20.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox20.Location = new System.Drawing.Point(203, 29);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(61, 21);
-            this.textBox20.TabIndex = 32;
-            this.textBox20.Text = "2.000mm";
+            this.tBoxCorePosN2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxCorePosN2.Location = new System.Drawing.Point(203, 29);
+            this.tBoxCorePosN2.Name = "tBoxCorePosN2";
+            this.tBoxCorePosN2.Size = new System.Drawing.Size(61, 21);
+            this.tBoxCorePosN2.TabIndex = 32;
+            this.tBoxCorePosN2.Text = "2.000mm";
             // 
-            // checkBox3
+            // ckBoxSeal2
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(69, 211);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(84, 16);
-            this.checkBox3.TabIndex = 7;
-            this.checkBox3.Text = "有无防水栓";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.ckBoxSeal2.AutoSize = true;
+            this.ckBoxSeal2.Location = new System.Drawing.Point(69, 211);
+            this.ckBoxSeal2.Name = "ckBoxSeal2";
+            this.ckBoxSeal2.Size = new System.Drawing.Size(84, 16);
+            this.ckBoxSeal2.TabIndex = 7;
+            this.ckBoxSeal2.Text = "有无防水栓";
+            this.ckBoxSeal2.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // ckBoxSplay2
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(69, 189);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(96, 16);
-            this.checkBox4.TabIndex = 6;
-            this.checkBox4.Text = "线芯分叉宽度";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.ckBoxSplay2.AutoSize = true;
+            this.ckBoxSplay2.Location = new System.Drawing.Point(69, 189);
+            this.ckBoxSplay2.Name = "ckBoxSplay2";
+            this.ckBoxSplay2.Size = new System.Drawing.Size(96, 16);
+            this.ckBoxSplay2.TabIndex = 6;
+            this.ckBoxSplay2.Text = "线芯分叉宽度";
+            this.ckBoxSplay2.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // ckBoxStripLen2
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(69, 162);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(72, 16);
-            this.checkBox5.TabIndex = 5;
-            this.checkBox5.Text = "剥切长度";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.ckBoxStripLen2.AutoSize = true;
+            this.ckBoxStripLen2.Location = new System.Drawing.Point(69, 162);
+            this.ckBoxStripLen2.Name = "ckBoxStripLen2";
+            this.ckBoxStripLen2.Size = new System.Drawing.Size(72, 16);
+            this.ckBoxStripLen2.TabIndex = 5;
+            this.ckBoxStripLen2.Text = "剥切长度";
+            this.ckBoxStripLen2.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // ckBoxSealWidth2
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(69, 135);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(84, 16);
-            this.checkBox6.TabIndex = 4;
-            this.checkBox6.Text = "防水栓直径";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.ckBoxSealWidth2.AutoSize = true;
+            this.ckBoxSealWidth2.Location = new System.Drawing.Point(69, 135);
+            this.ckBoxSealWidth2.Name = "ckBoxSealWidth2";
+            this.ckBoxSealWidth2.Size = new System.Drawing.Size(84, 16);
+            this.ckBoxSealWidth2.TabIndex = 4;
+            this.ckBoxSealWidth2.Text = "防水栓直径";
+            this.ckBoxSealWidth2.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // ckBoxCoreWidth2
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(69, 108);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(72, 16);
-            this.checkBox7.TabIndex = 3;
-            this.checkBox7.Text = "线芯直径";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.ckBoxCoreWidth2.AutoSize = true;
+            this.ckBoxCoreWidth2.Location = new System.Drawing.Point(69, 108);
+            this.ckBoxCoreWidth2.Name = "ckBoxCoreWidth2";
+            this.ckBoxCoreWidth2.Size = new System.Drawing.Size(72, 16);
+            this.ckBoxCoreWidth2.TabIndex = 3;
+            this.ckBoxCoreWidth2.Text = "线芯直径";
+            this.ckBoxCoreWidth2.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // ckBoxStripPos2
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(69, 81);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(72, 16);
-            this.checkBox8.TabIndex = 2;
-            this.checkBox8.Text = "剥切位置";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.ckBoxStripPos2.AutoSize = true;
+            this.ckBoxStripPos2.Location = new System.Drawing.Point(69, 81);
+            this.ckBoxStripPos2.Name = "ckBoxStripPos2";
+            this.ckBoxStripPos2.Size = new System.Drawing.Size(72, 16);
+            this.ckBoxStripPos2.TabIndex = 2;
+            this.ckBoxStripPos2.Text = "剥切位置";
+            this.ckBoxStripPos2.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // ckBoxSealPos2
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(69, 56);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(84, 16);
-            this.checkBox9.TabIndex = 1;
-            this.checkBox9.Text = "防水栓位置";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.ckBoxSealPos2.AutoSize = true;
+            this.ckBoxSealPos2.Location = new System.Drawing.Point(69, 56);
+            this.ckBoxSealPos2.Name = "ckBoxSealPos2";
+            this.ckBoxSealPos2.Size = new System.Drawing.Size(84, 16);
+            this.ckBoxSealPos2.TabIndex = 1;
+            this.ckBoxSealPos2.Text = "防水栓位置";
+            this.ckBoxSealPos2.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // ckBoxCorePos2
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Checked = true;
-            this.checkBox10.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox10.Location = new System.Drawing.Point(69, 29);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(72, 16);
-            this.checkBox10.TabIndex = 0;
-            this.checkBox10.Text = "线端位置";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.ckBoxCorePos2.AutoSize = true;
+            this.ckBoxCorePos2.Checked = true;
+            this.ckBoxCorePos2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ckBoxCorePos2.Location = new System.Drawing.Point(69, 29);
+            this.ckBoxCorePos2.Name = "ckBoxCorePos2";
+            this.ckBoxCorePos2.Size = new System.Drawing.Size(72, 16);
+            this.ckBoxCorePos2.TabIndex = 0;
+            this.ckBoxCorePos2.Text = "线端位置";
+            this.ckBoxCorePos2.UseVisualStyleBackColor = true;
             // 
             // panel_setting_wire2
             // 
@@ -1121,9 +1121,9 @@ namespace ProfileDetection
             // 
             this.grb_settings_input4.BackColor = System.Drawing.Color.Transparent;
             this.grb_settings_input4.Controls.Add(this.label22);
-            this.grb_settings_input4.Controls.Add(this.comboBox13);
+            this.grb_settings_input4.Controls.Add(this.cBoxInputPolLvl4);
             this.grb_settings_input4.Controls.Add(this.label23);
-            this.grb_settings_input4.Controls.Add(this.comboBox14);
+            this.grb_settings_input4.Controls.Add(this.cBoxInputModeLvl4);
             this.grb_settings_input4.ForeColor = System.Drawing.Color.Maroon;
             this.grb_settings_input4.Location = new System.Drawing.Point(468, 153);
             this.grb_settings_input4.Name = "grb_settings_input4";
@@ -1141,18 +1141,18 @@ namespace ProfileDetection
             this.label22.TabIndex = 22;
             this.label22.Text = "输入极性";
             // 
-            // comboBox13
+            // cBoxInputPolLvl4
             // 
-            this.comboBox13.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
+            this.cBoxInputPolLvl4.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxInputPolLvl4.FormattingEnabled = true;
+            this.cBoxInputPolLvl4.Items.AddRange(new object[] {
             "上升沿触发",
             "下降沿触发"});
-            this.comboBox13.Location = new System.Drawing.Point(74, 43);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(121, 20);
-            this.comboBox13.TabIndex = 21;
-            this.comboBox13.Text = "下降沿触发";
+            this.cBoxInputPolLvl4.Location = new System.Drawing.Point(74, 43);
+            this.cBoxInputPolLvl4.Name = "cBoxInputPolLvl4";
+            this.cBoxInputPolLvl4.Size = new System.Drawing.Size(121, 20);
+            this.cBoxInputPolLvl4.TabIndex = 21;
+            this.cBoxInputPolLvl4.Text = "下降沿触发";
             // 
             // label23
             // 
@@ -1163,28 +1163,28 @@ namespace ProfileDetection
             this.label23.TabIndex = 20;
             this.label23.Text = "输入模式";
             // 
-            // comboBox14
+            // cBoxInputModeLvl4
             // 
-            this.comboBox14.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
+            this.cBoxInputModeLvl4.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxInputModeLvl4.FormattingEnabled = true;
+            this.cBoxInputModeLvl4.Items.AddRange(new object[] {
             "禁用",
             "进入学习模式",
             "触发采样",
             "进入设置模式"});
-            this.comboBox14.Location = new System.Drawing.Point(74, 17);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(121, 20);
-            this.comboBox14.TabIndex = 19;
-            this.comboBox14.Text = "禁用";
+            this.cBoxInputModeLvl4.Location = new System.Drawing.Point(74, 17);
+            this.cBoxInputModeLvl4.Name = "cBoxInputModeLvl4";
+            this.cBoxInputModeLvl4.Size = new System.Drawing.Size(121, 20);
+            this.cBoxInputModeLvl4.TabIndex = 19;
+            this.cBoxInputModeLvl4.Text = "禁用";
             // 
             // grb_settings_input3
             // 
             this.grb_settings_input3.BackColor = System.Drawing.Color.Transparent;
             this.grb_settings_input3.Controls.Add(this.label18);
-            this.grb_settings_input3.Controls.Add(this.comboBox11);
+            this.grb_settings_input3.Controls.Add(this.cBoxInputPolLvl3);
             this.grb_settings_input3.Controls.Add(this.label19);
-            this.grb_settings_input3.Controls.Add(this.comboBox12);
+            this.grb_settings_input3.Controls.Add(this.cBoxInputModeLvl3);
             this.grb_settings_input3.ForeColor = System.Drawing.Color.Maroon;
             this.grb_settings_input3.Location = new System.Drawing.Point(173, 153);
             this.grb_settings_input3.Name = "grb_settings_input3";
@@ -1202,18 +1202,18 @@ namespace ProfileDetection
             this.label18.TabIndex = 22;
             this.label18.Text = "输入极性";
             // 
-            // comboBox11
+            // cBoxInputPolLvl3
             // 
-            this.comboBox11.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.cBoxInputPolLvl3.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxInputPolLvl3.FormattingEnabled = true;
+            this.cBoxInputPolLvl3.Items.AddRange(new object[] {
             "上升沿触发",
             "下降沿触发"});
-            this.comboBox11.Location = new System.Drawing.Point(74, 43);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(121, 20);
-            this.comboBox11.TabIndex = 21;
-            this.comboBox11.Text = "下降沿触发";
+            this.cBoxInputPolLvl3.Location = new System.Drawing.Point(74, 43);
+            this.cBoxInputPolLvl3.Name = "cBoxInputPolLvl3";
+            this.cBoxInputPolLvl3.Size = new System.Drawing.Size(121, 20);
+            this.cBoxInputPolLvl3.TabIndex = 21;
+            this.cBoxInputPolLvl3.Text = "下降沿触发";
             // 
             // label19
             // 
@@ -1224,28 +1224,28 @@ namespace ProfileDetection
             this.label19.TabIndex = 20;
             this.label19.Text = "输入模式";
             // 
-            // comboBox12
+            // cBoxInputModeLvl3
             // 
-            this.comboBox12.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
+            this.cBoxInputModeLvl3.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxInputModeLvl3.FormattingEnabled = true;
+            this.cBoxInputModeLvl3.Items.AddRange(new object[] {
             "禁用",
             "进入学习模式",
             "触发采样",
             "进入设置模式"});
-            this.comboBox12.Location = new System.Drawing.Point(74, 17);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(121, 20);
-            this.comboBox12.TabIndex = 19;
-            this.comboBox12.Text = "禁用";
+            this.cBoxInputModeLvl3.Location = new System.Drawing.Point(74, 17);
+            this.cBoxInputModeLvl3.Name = "cBoxInputModeLvl3";
+            this.cBoxInputModeLvl3.Size = new System.Drawing.Size(121, 20);
+            this.cBoxInputModeLvl3.TabIndex = 19;
+            this.cBoxInputModeLvl3.Text = "禁用";
             // 
             // grb_settings_input2
             // 
             this.grb_settings_input2.BackColor = System.Drawing.Color.Transparent;
             this.grb_settings_input2.Controls.Add(this.label16);
-            this.grb_settings_input2.Controls.Add(this.comboBox9);
+            this.grb_settings_input2.Controls.Add(this.cBoxInputPolLvl2);
             this.grb_settings_input2.Controls.Add(this.label17);
-            this.grb_settings_input2.Controls.Add(this.comboBox10);
+            this.grb_settings_input2.Controls.Add(this.cBoxInputModeLvl2);
             this.grb_settings_input2.ForeColor = System.Drawing.Color.Maroon;
             this.grb_settings_input2.Location = new System.Drawing.Point(468, 63);
             this.grb_settings_input2.Name = "grb_settings_input2";
@@ -1263,18 +1263,18 @@ namespace ProfileDetection
             this.label16.TabIndex = 22;
             this.label16.Text = "输入极性";
             // 
-            // comboBox9
+            // cBoxInputPolLvl2
             // 
-            this.comboBox9.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.cBoxInputPolLvl2.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxInputPolLvl2.FormattingEnabled = true;
+            this.cBoxInputPolLvl2.Items.AddRange(new object[] {
             "上升沿触发",
             "下降沿触发"});
-            this.comboBox9.Location = new System.Drawing.Point(74, 43);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(121, 20);
-            this.comboBox9.TabIndex = 21;
-            this.comboBox9.Text = "下降沿触发";
+            this.cBoxInputPolLvl2.Location = new System.Drawing.Point(74, 43);
+            this.cBoxInputPolLvl2.Name = "cBoxInputPolLvl2";
+            this.cBoxInputPolLvl2.Size = new System.Drawing.Size(121, 20);
+            this.cBoxInputPolLvl2.TabIndex = 21;
+            this.cBoxInputPolLvl2.Text = "下降沿触发";
             // 
             // label17
             // 
@@ -1285,20 +1285,20 @@ namespace ProfileDetection
             this.label17.TabIndex = 20;
             this.label17.Text = "输入模式";
             // 
-            // comboBox10
+            // cBoxInputModeLvl2
             // 
-            this.comboBox10.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.cBoxInputModeLvl2.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxInputModeLvl2.FormattingEnabled = true;
+            this.cBoxInputModeLvl2.Items.AddRange(new object[] {
             "禁用",
             "进入学习模式",
             "触发采样",
             "进入设置模式"});
-            this.comboBox10.Location = new System.Drawing.Point(74, 17);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(121, 20);
-            this.comboBox10.TabIndex = 19;
-            this.comboBox10.Text = "禁用";
+            this.cBoxInputModeLvl2.Location = new System.Drawing.Point(74, 17);
+            this.cBoxInputModeLvl2.Name = "cBoxInputModeLvl2";
+            this.cBoxInputModeLvl2.Size = new System.Drawing.Size(121, 20);
+            this.cBoxInputModeLvl2.TabIndex = 19;
+            this.cBoxInputModeLvl2.Text = "禁用";
             // 
             // tBoxMinSetupDuration
             // 
@@ -1442,13 +1442,13 @@ namespace ProfileDetection
             // 
             this.group_output2.BackColor = System.Drawing.Color.Transparent;
             this.group_output2.Controls.Add(this.groupBox5);
-            this.group_output2.Controls.Add(this.comboBox3);
+            this.group_output2.Controls.Add(this.cBoxOutRstMode2);
             this.group_output2.Controls.Add(this.groupBox6);
             this.group_output2.Controls.Add(this.label11);
             this.group_output2.Controls.Add(this.groupBox7);
             this.group_output2.Controls.Add(this.label14);
-            this.group_output2.Controls.Add(this.comboBox4);
-            this.group_output2.Controls.Add(this.comboBox5);
+            this.group_output2.Controls.Add(this.cBoxOutMode2);
+            this.group_output2.Controls.Add(this.cBoxOutWire2);
             this.group_output2.Controls.Add(this.label15);
             this.group_output2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.group_output2.ForeColor = System.Drawing.Color.Maroon;
@@ -1462,9 +1462,9 @@ namespace ProfileDetection
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox5.Controls.Add(this.radioButton1);
-            this.groupBox5.Controls.Add(this.radioButton2);
-            this.groupBox5.Controls.Add(this.radioButton3);
+            this.groupBox5.Controls.Add(this.rBtnIgnoreLearn2);
+            this.groupBox5.Controls.Add(this.rBtnIgnoreFirst2);
+            this.groupBox5.Controls.Add(this.rBtnNormal2);
             this.groupBox5.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox5.Location = new System.Drawing.Point(6, 20);
             this.groupBox5.Name = "groupBox5";
@@ -1473,56 +1473,56 @@ namespace ProfileDetection
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "输出选项";
             // 
-            // radioButton1
+            // rBtnIgnoreLearn2
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(16, 59);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(95, 16);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.Text = "忽略所有学习";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rBtnIgnoreLearn2.AutoSize = true;
+            this.rBtnIgnoreLearn2.Location = new System.Drawing.Point(16, 59);
+            this.rBtnIgnoreLearn2.Name = "rBtnIgnoreLearn2";
+            this.rBtnIgnoreLearn2.Size = new System.Drawing.Size(95, 16);
+            this.rBtnIgnoreLearn2.TabIndex = 3;
+            this.rBtnIgnoreLearn2.Text = "忽略所有学习";
+            this.rBtnIgnoreLearn2.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rBtnIgnoreFirst2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(16, 40);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(107, 16);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.Text = "忽略学习第一条";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rBtnIgnoreFirst2.AutoSize = true;
+            this.rBtnIgnoreFirst2.Location = new System.Drawing.Point(16, 40);
+            this.rBtnIgnoreFirst2.Name = "rBtnIgnoreFirst2";
+            this.rBtnIgnoreFirst2.Size = new System.Drawing.Size(107, 16);
+            this.rBtnIgnoreFirst2.TabIndex = 2;
+            this.rBtnIgnoreFirst2.Text = "忽略学习第一条";
+            this.rBtnIgnoreFirst2.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rBtnNormal2
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Checked = true;
-            this.radioButton3.Location = new System.Drawing.Point(16, 19);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(71, 16);
-            this.radioButton3.TabIndex = 1;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "始终有效";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rBtnNormal2.AutoSize = true;
+            this.rBtnNormal2.Checked = true;
+            this.rBtnNormal2.Location = new System.Drawing.Point(16, 19);
+            this.rBtnNormal2.Name = "rBtnNormal2";
+            this.rBtnNormal2.Size = new System.Drawing.Size(71, 16);
+            this.rBtnNormal2.TabIndex = 1;
+            this.rBtnNormal2.TabStop = true;
+            this.rBtnNormal2.Text = "始终有效";
+            this.rBtnNormal2.UseVisualStyleBackColor = true;
             // 
-            // comboBox3
+            // cBoxOutRstMode2
             // 
-            this.comboBox3.Enabled = false;
-            this.comboBox3.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cBoxOutRstMode2.Enabled = false;
+            this.cBoxOutRstMode2.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxOutRstMode2.FormattingEnabled = true;
+            this.cBoxOutRstMode2.Items.AddRange(new object[] {
             "延时自动复位"});
-            this.comboBox3.Location = new System.Drawing.Point(262, 143);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(100, 20);
-            this.comboBox3.TabIndex = 17;
-            this.comboBox3.Text = "延时自动复位";
+            this.cBoxOutRstMode2.Location = new System.Drawing.Point(262, 143);
+            this.cBoxOutRstMode2.Name = "cBoxOutRstMode2";
+            this.cBoxOutRstMode2.Size = new System.Drawing.Size(100, 20);
+            this.cBoxOutRstMode2.TabIndex = 17;
+            this.cBoxOutRstMode2.Text = "延时自动复位";
             // 
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox6.Controls.Add(this.radioButton4);
-            this.groupBox6.Controls.Add(this.radioButton5);
+            this.groupBox6.Controls.Add(this.rBtnNC2);
+            this.groupBox6.Controls.Add(this.rBtnNO2);
             this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox6.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox6.Location = new System.Drawing.Point(181, 30);
@@ -1532,27 +1532,27 @@ namespace ProfileDetection
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "输出状态";
             // 
-            // radioButton4
+            // rBtnNC2
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(16, 31);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(47, 16);
-            this.radioButton4.TabIndex = 1;
-            this.radioButton4.Text = "常闭";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rBtnNC2.AutoSize = true;
+            this.rBtnNC2.Location = new System.Drawing.Point(16, 31);
+            this.rBtnNC2.Name = "rBtnNC2";
+            this.rBtnNC2.Size = new System.Drawing.Size(47, 16);
+            this.rBtnNC2.TabIndex = 1;
+            this.rBtnNC2.Text = "常闭";
+            this.rBtnNC2.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rBtnNO2
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Checked = true;
-            this.radioButton5.Location = new System.Drawing.Point(16, 14);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(47, 16);
-            this.radioButton5.TabIndex = 0;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "常开";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rBtnNO2.AutoSize = true;
+            this.rBtnNO2.Checked = true;
+            this.rBtnNO2.Location = new System.Drawing.Point(16, 14);
+            this.rBtnNO2.Name = "rBtnNO2";
+            this.rBtnNO2.Size = new System.Drawing.Size(47, 16);
+            this.rBtnNO2.TabIndex = 0;
+            this.rBtnNO2.TabStop = true;
+            this.rBtnNO2.Text = "常开";
+            this.rBtnNO2.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -1568,9 +1568,9 @@ namespace ProfileDetection
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox7.Controls.Add(this.textBox2);
+            this.groupBox7.Controls.Add(this.tBoxDuration2);
             this.groupBox7.Controls.Add(this.label12);
-            this.groupBox7.Controls.Add(this.textBox3);
+            this.groupBox7.Controls.Add(this.tBoxOutDelay2);
             this.groupBox7.Controls.Add(this.label13);
             this.groupBox7.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox7.Location = new System.Drawing.Point(6, 113);
@@ -1580,14 +1580,14 @@ namespace ProfileDetection
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "复位时间";
             // 
-            // textBox2
+            // tBoxDuration2
             // 
-            this.textBox2.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox2.Location = new System.Drawing.Point(89, 53);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(62, 21);
-            this.textBox2.TabIndex = 13;
-            this.textBox2.Text = "100";
+            this.tBoxDuration2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxDuration2.Location = new System.Drawing.Point(89, 53);
+            this.tBoxDuration2.Name = "tBoxDuration2";
+            this.tBoxDuration2.Size = new System.Drawing.Size(62, 21);
+            this.tBoxDuration2.TabIndex = 13;
+            this.tBoxDuration2.Text = "100";
             // 
             // label12
             // 
@@ -1598,14 +1598,14 @@ namespace ProfileDetection
             this.label12.TabIndex = 12;
             this.label12.Text = "持续时间(ms)";
             // 
-            // textBox3
+            // tBoxOutDelay2
             // 
-            this.textBox3.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox3.Location = new System.Drawing.Point(89, 24);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(62, 21);
-            this.textBox3.TabIndex = 11;
-            this.textBox3.Text = "0";
+            this.tBoxOutDelay2.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxOutDelay2.Location = new System.Drawing.Point(89, 24);
+            this.tBoxOutDelay2.Name = "tBoxOutDelay2";
+            this.tBoxOutDelay2.Size = new System.Drawing.Size(62, 21);
+            this.tBoxOutDelay2.TabIndex = 11;
+            this.tBoxOutDelay2.Text = "0";
             // 
             // label13
             // 
@@ -1627,32 +1627,32 @@ namespace ProfileDetection
             this.label14.TabIndex = 15;
             this.label14.Text = "线型";
             // 
-            // comboBox4
+            // cBoxOutMode2
             // 
-            this.comboBox4.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cBoxOutMode2.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxOutMode2.FormattingEnabled = true;
+            this.cBoxOutMode2.Items.AddRange(new object[] {
             "合格品输出脉冲",
             "不良品输出脉冲",
             "合格/不良品都输出脉冲"});
-            this.comboBox4.Location = new System.Drawing.Point(239, 98);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(123, 20);
-            this.comboBox4.TabIndex = 12;
-            this.comboBox4.Text = "合格品输出脉冲";
+            this.cBoxOutMode2.Location = new System.Drawing.Point(239, 98);
+            this.cBoxOutMode2.Name = "cBoxOutMode2";
+            this.cBoxOutMode2.Size = new System.Drawing.Size(123, 20);
+            this.cBoxOutMode2.TabIndex = 12;
+            this.cBoxOutMode2.Text = "合格品输出脉冲";
             // 
-            // comboBox5
+            // cBoxOutWire2
             // 
-            this.comboBox5.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.cBoxOutWire2.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxOutWire2.FormattingEnabled = true;
+            this.cBoxOutWire2.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.comboBox5.Location = new System.Drawing.Point(239, 173);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(123, 20);
-            this.comboBox5.TabIndex = 14;
-            this.comboBox5.Text = "1";
+            this.cBoxOutWire2.Location = new System.Drawing.Point(239, 173);
+            this.cBoxOutWire2.Name = "cBoxOutWire2";
+            this.cBoxOutWire2.Size = new System.Drawing.Size(123, 20);
+            this.cBoxOutWire2.TabIndex = 14;
+            this.cBoxOutWire2.Text = "1";
             // 
             // label15
             // 
@@ -1668,15 +1668,15 @@ namespace ProfileDetection
             // group_output1
             // 
             this.group_output1.BackColor = System.Drawing.Color.Transparent;
-            this.group_output1.Controls.Add(this.comboBox6);
+            this.group_output1.Controls.Add(this.cBoxOutRstMode1);
             this.group_output1.Controls.Add(this.groupBox3);
             this.group_output1.Controls.Add(this.label8);
             this.group_output1.Controls.Add(this.groupBox2);
             this.group_output1.Controls.Add(this.label9);
             this.group_output1.Controls.Add(this.groupBox4);
-            this.group_output1.Controls.Add(this.comboBox7);
+            this.group_output1.Controls.Add(this.cBoxOutMode1);
             this.group_output1.Controls.Add(this.label10);
-            this.group_output1.Controls.Add(this.comboBox8);
+            this.group_output1.Controls.Add(this.cBoxOutWire1);
             this.group_output1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.group_output1.ForeColor = System.Drawing.Color.Maroon;
             this.group_output1.Location = new System.Drawing.Point(37, 77);
@@ -1686,18 +1686,18 @@ namespace ProfileDetection
             this.group_output1.TabStop = false;
             this.group_output1.Text = "输出1";
             // 
-            // comboBox6
+            // cBoxOutRstMode1
             // 
-            this.comboBox6.Enabled = false;
-            this.comboBox6.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.cBoxOutRstMode1.Enabled = false;
+            this.cBoxOutRstMode1.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxOutRstMode1.FormattingEnabled = true;
+            this.cBoxOutRstMode1.Items.AddRange(new object[] {
             "延时自动复位"});
-            this.comboBox6.Location = new System.Drawing.Point(263, 140);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(100, 20);
-            this.comboBox6.TabIndex = 23;
-            this.comboBox6.Text = "延时自动复位";
+            this.cBoxOutRstMode1.Location = new System.Drawing.Point(263, 140);
+            this.cBoxOutRstMode1.Name = "cBoxOutRstMode1";
+            this.cBoxOutRstMode1.Size = new System.Drawing.Size(100, 20);
+            this.cBoxOutRstMode1.TabIndex = 23;
+            this.cBoxOutRstMode1.Text = "延时自动复位";
             // 
             // groupBox3
             // 
@@ -1854,19 +1854,19 @@ namespace ProfileDetection
             this.label7.TabIndex = 10;
             this.label7.Text = "延时输出(ms)";
             // 
-            // comboBox7
+            // cBoxOutMode1
             // 
-            this.comboBox7.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.cBoxOutMode1.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxOutMode1.FormattingEnabled = true;
+            this.cBoxOutMode1.Items.AddRange(new object[] {
             "合格品输出脉冲",
             "不良品输出脉冲",
             "合格/不良品都输出脉冲"});
-            this.comboBox7.Location = new System.Drawing.Point(240, 99);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(123, 20);
-            this.comboBox7.TabIndex = 18;
-            this.comboBox7.Text = "合格品输出脉冲";
+            this.cBoxOutMode1.Location = new System.Drawing.Point(240, 99);
+            this.cBoxOutMode1.Name = "cBoxOutMode1";
+            this.cBoxOutMode1.Size = new System.Drawing.Size(123, 20);
+            this.cBoxOutMode1.TabIndex = 18;
+            this.cBoxOutMode1.Text = "合格品输出脉冲";
             // 
             // label10
             // 
@@ -1879,18 +1879,18 @@ namespace ProfileDetection
             this.label10.TabIndex = 19;
             this.label10.Text = "输出模式";
             // 
-            // comboBox8
+            // cBoxOutWire1
             // 
-            this.comboBox8.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.cBoxOutWire1.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxOutWire1.FormattingEnabled = true;
+            this.cBoxOutWire1.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.comboBox8.Location = new System.Drawing.Point(240, 174);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(123, 20);
-            this.comboBox8.TabIndex = 20;
-            this.comboBox8.Text = "1";
+            this.cBoxOutWire1.Location = new System.Drawing.Point(240, 174);
+            this.cBoxOutWire1.Name = "cBoxOutWire1";
+            this.cBoxOutWire1.Size = new System.Drawing.Size(123, 20);
+            this.cBoxOutWire1.TabIndex = 20;
+            this.cBoxOutWire1.Text = "1";
             // 
             // btn_setting_wire2
             // 
@@ -1956,12 +1956,12 @@ namespace ProfileDetection
             // 
             this.panel_setting_contaner.BackgroundImage = global::ProfileDetection.Properties.Resources.panel_bg_setings;
             this.panel_setting_contaner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel_setting_contaner.Controls.Add(this.checkBox1);
-            this.panel_setting_contaner.Controls.Add(this.comboBox2);
+            this.panel_setting_contaner.Controls.Add(this.ckBoxAutoAdjSpeed);
+            this.panel_setting_contaner.Controls.Add(this.cBoxLearnNum);
             this.panel_setting_contaner.Controls.Add(this.label5);
-            this.panel_setting_contaner.Controls.Add(this.comboBox1);
+            this.panel_setting_contaner.Controls.Add(this.cBoxModelNum);
             this.panel_setting_contaner.Controls.Add(this.label3);
-            this.panel_setting_contaner.Controls.Add(this.textBox1);
+            this.panel_setting_contaner.Controls.Add(this.tBoxSensorSensitivity);
             this.panel_setting_contaner.Controls.Add(this.label4);
             this.panel_setting_contaner.Controls.Add(this.label2);
             this.panel_setting_contaner.Controls.Add(this.btn_Sen);
@@ -1971,27 +1971,27 @@ namespace ProfileDetection
             this.panel_setting_contaner.Size = new System.Drawing.Size(857, 322);
             this.panel_setting_contaner.TabIndex = 0;
             // 
-            // checkBox1
+            // ckBoxAutoAdjSpeed
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox1.ForeColor = System.Drawing.Color.Maroon;
-            this.checkBox1.Location = new System.Drawing.Point(97, 253);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(161, 26);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "使能速度补偿";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.ckBoxAutoAdjSpeed.AutoSize = true;
+            this.ckBoxAutoAdjSpeed.BackColor = System.Drawing.Color.Transparent;
+            this.ckBoxAutoAdjSpeed.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ckBoxAutoAdjSpeed.ForeColor = System.Drawing.Color.Maroon;
+            this.ckBoxAutoAdjSpeed.Location = new System.Drawing.Point(97, 253);
+            this.ckBoxAutoAdjSpeed.Name = "ckBoxAutoAdjSpeed";
+            this.ckBoxAutoAdjSpeed.Size = new System.Drawing.Size(161, 26);
+            this.ckBoxAutoAdjSpeed.TabIndex = 11;
+            this.ckBoxAutoAdjSpeed.Text = "使能速度补偿";
+            this.ckBoxAutoAdjSpeed.UseVisualStyleBackColor = false;
             // 
-            // comboBox2
+            // cBoxLearnNum
             // 
-            this.comboBox2.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(201, 212);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 20);
-            this.comboBox2.TabIndex = 9;
+            this.cBoxLearnNum.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxLearnNum.FormattingEnabled = true;
+            this.cBoxLearnNum.Location = new System.Drawing.Point(201, 212);
+            this.cBoxLearnNum.Name = "cBoxLearnNum";
+            this.cBoxLearnNum.Size = new System.Drawing.Size(100, 20);
+            this.cBoxLearnNum.TabIndex = 9;
             // 
             // label5
             // 
@@ -2005,14 +2005,14 @@ namespace ProfileDetection
             this.label5.TabIndex = 8;
             this.label5.Text = "学习数量：";
             // 
-            // comboBox1
+            // cBoxModelNum
             // 
-            this.comboBox1.ForeColor = System.Drawing.Color.Maroon;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(201, 168);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 20);
-            this.comboBox1.TabIndex = 7;
+            this.cBoxModelNum.ForeColor = System.Drawing.Color.Maroon;
+            this.cBoxModelNum.FormattingEnabled = true;
+            this.cBoxModelNum.Location = new System.Drawing.Point(201, 168);
+            this.cBoxModelNum.Name = "cBoxModelNum";
+            this.cBoxModelNum.Size = new System.Drawing.Size(100, 20);
+            this.cBoxModelNum.TabIndex = 7;
             // 
             // label3
             // 
@@ -2026,13 +2026,13 @@ namespace ProfileDetection
             this.label3.TabIndex = 6;
             this.label3.Text = "线型数量：";
             // 
-            // textBox1
+            // tBoxSensorSensitivity
             // 
-            this.textBox1.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox1.Location = new System.Drawing.Point(201, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 5;
+            this.tBoxSensorSensitivity.ForeColor = System.Drawing.Color.Maroon;
+            this.tBoxSensorSensitivity.Location = new System.Drawing.Point(201, 127);
+            this.tBoxSensorSensitivity.Name = "tBoxSensorSensitivity";
+            this.tBoxSensorSensitivity.Size = new System.Drawing.Size(100, 21);
+            this.tBoxSensorSensitivity.TabIndex = 5;
             // 
             // label4
             // 
@@ -2360,32 +2360,32 @@ namespace ProfileDetection
         private System.Windows.Forms.PictureBox pBoxSen;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel_setting_output;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.CheckBox ckBoxAutoAdjSpeed;
+        private System.Windows.Forms.ComboBox cBoxLearnNum;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cBoxModelNum;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tBoxSensorSensitivity;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox checkBoxOutIgnoreWhileOutActive;
         private System.Windows.Forms.GroupBox group_output2;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.RadioButton rBtnIgnoreLearn2;
+        private System.Windows.Forms.RadioButton rBtnIgnoreFirst2;
+        private System.Windows.Forms.RadioButton rBtnNormal2;
+        private System.Windows.Forms.ComboBox cBoxOutRstMode2;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton rBtnNC2;
+        private System.Windows.Forms.RadioButton rBtnNO2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tBoxDuration2;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tBoxOutDelay2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cBoxOutMode2;
+        private System.Windows.Forms.ComboBox cBoxOutWire2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox group_output1;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -2400,47 +2400,47 @@ namespace ProfileDetection
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tBoxOutDelay1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox cBoxOutRstMode1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox cBoxOutMode1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox cBoxOutWire1;
         private System.Windows.Forms.Panel panel_setting_wire1;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tBoxSealRatio2;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tBoxStripLimit2;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tBoxSealLimit2;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox tBoxVariationFilter2;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.GroupBox groupBox13;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.CheckBox ckBoxSealOri2;
+        private System.Windows.Forms.TextBox tBoxSprayP2;
+        private System.Windows.Forms.TextBox tBoxStripLenP2;
+        private System.Windows.Forms.TextBox tBoxStripLenN2;
+        private System.Windows.Forms.TextBox tBoxSealWidthP2;
+        private System.Windows.Forms.TextBox tBoxSealWidthN2;
+        private System.Windows.Forms.TextBox tBoxCoreWidthP2;
+        private System.Windows.Forms.TextBox tBoxCoreWidthN2;
+        private System.Windows.Forms.TextBox tBoxStripPosP2;
+        private System.Windows.Forms.TextBox tBoxStripPosN2;
+        private System.Windows.Forms.TextBox tBoxSealPosP2;
+        private System.Windows.Forms.TextBox tBoxSealPosN2;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.TextBox tBoxCorePosP2;
+        private System.Windows.Forms.TextBox tBoxCorePosN2;
+        private System.Windows.Forms.CheckBox ckBoxSeal2;
+        private System.Windows.Forms.CheckBox ckBoxSplay2;
+        private System.Windows.Forms.CheckBox ckBoxStripLen2;
+        private System.Windows.Forms.CheckBox ckBoxSealWidth2;
+        private System.Windows.Forms.CheckBox ckBoxCoreWidth2;
+        private System.Windows.Forms.CheckBox ckBoxStripPos2;
+        private System.Windows.Forms.CheckBox ckBoxSealPos2;
+        private System.Windows.Forms.CheckBox ckBoxCorePos2;
         private System.Windows.Forms.Panel panel_setting_wire2;
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.TextBox tBoxSealRatio1;
@@ -2479,19 +2479,19 @@ namespace ProfileDetection
         private System.Windows.Forms.Panel panel_setting_input;
         private System.Windows.Forms.GroupBox grb_settings_input4;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.ComboBox cBoxInputPolLvl4;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.ComboBox cBoxInputModeLvl4;
         private System.Windows.Forms.GroupBox grb_settings_input3;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox cBoxInputPolLvl3;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox cBoxInputModeLvl3;
         private System.Windows.Forms.GroupBox grb_settings_input2;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox cBoxInputPolLvl2;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox cBoxInputModeLvl2;
         private System.Windows.Forms.TextBox tBoxMinSetupDuration;
         private System.Windows.Forms.TextBox tBoxFiringTimeOut;
         private System.Windows.Forms.Label label35;
