@@ -196,5 +196,8 @@
   <ItemGroup>
     <None Include="Resources\实时校准未激活.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn背景激活1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -248,51 +248,63 @@ namespace ProfileDetection
             // 
             // btn_instrument
             // 
-            this.btn_instrument.BackgroundImage = global::ProfileDetection.Properties.Resources.设备激活;
+            this.btn_instrument.BackgroundImage = global::ProfileDetection.Properties.Resources.btn背景激活1;
             this.btn_instrument.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(60)))), ((int)(((byte)(103)))));
             this.btn_instrument.FlatAppearance.BorderSize = 0;
             this.btn_instrument.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_instrument.Font = new System.Drawing.Font("宋体", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_instrument.ForeColor = System.Drawing.Color.White;
             this.btn_instrument.Location = new System.Drawing.Point(31, 27);
             this.btn_instrument.Name = "btn_instrument";
             this.btn_instrument.Size = new System.Drawing.Size(118, 36);
             this.btn_instrument.TabIndex = 0;
+            this.btn_instrument.Text = "设备";
             this.btn_instrument.UseVisualStyleBackColor = true;
             this.btn_instrument.Click += new System.EventHandler(this.btn_instrument_Click);
             // 
             // btn_record
             // 
-            this.btn_record.BackgroundImage = global::ProfileDetection.Properties.Resources.记录;
+            this.btn_record.BackgroundImage = global::ProfileDetection.Properties.Resources.btn背景;
             this.btn_record.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(60)))), ((int)(((byte)(103)))));
             this.btn_record.FlatAppearance.BorderSize = 0;
             this.btn_record.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_record.Font = new System.Drawing.Font("宋体", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_record.ForeColor = System.Drawing.Color.White;
             this.btn_record.Location = new System.Drawing.Point(166, 27);
             this.btn_record.Name = "btn_record";
             this.btn_record.Size = new System.Drawing.Size(118, 36);
             this.btn_record.TabIndex = 1;
+            this.btn_record.Text = "记录";
             this.btn_record.UseVisualStyleBackColor = true;
             // 
             // btn_setting
             // 
-            this.btn_setting.BackgroundImage = global::ProfileDetection.Properties.Resources.设置;
+            this.btn_setting.BackgroundImage = global::ProfileDetection.Properties.Resources.btn背景;
             this.btn_setting.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(60)))), ((int)(((byte)(103)))));
             this.btn_setting.FlatAppearance.BorderSize = 0;
             this.btn_setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_setting.Font = new System.Drawing.Font("宋体", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_setting.ForeColor = System.Drawing.Color.White;
             this.btn_setting.Location = new System.Drawing.Point(307, 27);
             this.btn_setting.Name = "btn_setting";
             this.btn_setting.Size = new System.Drawing.Size(118, 36);
             this.btn_setting.TabIndex = 2;
+            this.btn_setting.Text = "设置";
             this.btn_setting.UseVisualStyleBackColor = true;
             // 
             // btn_setting_file
             // 
-            this.btn_setting_file.BackgroundImage = global::ProfileDetection.Properties.Resources.文件;
+            this.btn_setting_file.BackgroundImage = global::ProfileDetection.Properties.Resources.btn背景;
             this.btn_setting_file.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(60)))), ((int)(((byte)(103)))));
             this.btn_setting_file.FlatAppearance.BorderSize = 0;
             this.btn_setting_file.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_setting_file.Font = new System.Drawing.Font("宋体", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_setting_file.ForeColor = System.Drawing.Color.White;
             this.btn_setting_file.Location = new System.Drawing.Point(444, 27);
             this.btn_setting_file.Name = "btn_setting_file";
             this.btn_setting_file.Size = new System.Drawing.Size(118, 36);
             this.btn_setting_file.TabIndex = 3;
+            this.btn_setting_file.Text = "文件";
             this.btn_setting_file.UseVisualStyleBackColor = true;
             // 
             // panel_log

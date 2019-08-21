@@ -67,10 +67,10 @@ namespace ProfileDetection
             }
             #endregion
             //将四个设置按钮设置为未激活
-            this.btn_instrument.BackgroundImage = ProfileDetection.Properties.Resources.设备;//this.btn_record,this.btn_setting, this.btn_setting_file
-            this.btn_record.BackgroundImage = ProfileDetection.Properties.Resources.记录;
-            this.btn_setting.BackgroundImage = ProfileDetection.Properties.Resources.设置;
-            this.btn_setting_file.BackgroundImage = ProfileDetection.Properties.Resources.文件;
+            this.btn_instrument.BackgroundImage = ProfileDetection.Properties.Resources.btn背景;//this.btn_record,this.btn_setting, this.btn_setting_file
+            this.btn_record.BackgroundImage = ProfileDetection.Properties.Resources.btn背景;
+            this.btn_setting.BackgroundImage = ProfileDetection.Properties.Resources.btn背景;
+            this.btn_setting_file.BackgroundImage = ProfileDetection.Properties.Resources.btn背景;
 
             //隐藏三个面板
             this.panel_file.Visible = false;
@@ -87,18 +87,18 @@ namespace ProfileDetection
             switch (btn_index)                              //将相应的按钮设置为激活状态，并显示对应的panel；
             {
                 case (int)btn_index_main.btn_instrument:
-                    this.btn_instrument.BackgroundImage = ProfileDetection.Properties.Resources.设备激活;
+                    this.btn_instrument.BackgroundImage = ProfileDetection.Properties.Resources.btn背景激活1;
                     break;
                 case (int)btn_index_main.btn_record:
-                    this.btn_record.BackgroundImage = ProfileDetection.Properties.Resources.记录激活;
+                    this.btn_record.BackgroundImage = ProfileDetection.Properties.Resources.btn背景激活1;
                     this.panel_log.Visible = true;
                     break;
                 case (int)btn_index_main.btn_setting:
-                    this.btn_setting.BackgroundImage = ProfileDetection.Properties.Resources.设置激活;
+                    this.btn_setting.BackgroundImage = ProfileDetection.Properties.Resources.btn背景激活1;
                     this.panel_setting.Visible = true;
                     break;
                 case (int)btn_index_main.btn_setting_file:
-                    this.btn_setting_file.BackgroundImage = ProfileDetection.Properties.Resources.文件激活;
+                    this.btn_setting_file.BackgroundImage = ProfileDetection.Properties.Resources.btn背景激活1;
                     this.panel_file.Visible = true;
                     break;
             }

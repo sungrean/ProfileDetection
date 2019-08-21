@@ -163,6 +163,16 @@ namespace ProfileDetection.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap btn背景激活1 {
+            get {
+                object obj = ResourceManager.GetObject("btn背景激活1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap com_activi {
             get {
                 object obj = ResourceManager.GetObject("com_activi", resourceCulture);
